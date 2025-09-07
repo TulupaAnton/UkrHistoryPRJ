@@ -3,3 +3,37 @@
   --font-primary: 'Roboto', 'san-serif';
   --font-secondary: 'Caveat';
 }
+/* Для всех браузеров */
+* {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #8b5e3c #fdf6e3; /* (ползунок, фон) */
+}
+body {
+  background-color: #fdf6e3;
+}
+
+/* Для Chrome, Safari, Edge */
+*::-webkit-scrollbar {
+  width: 10px; /* вертикальный скролл */
+  height: 10px; /* горизонтальный скролл */
+}
+
+*::-webkit-scrollbar-track {
+  background: #fdf6e3; /* светлый пергамент */
+  border-radius: 10px;
+  border: 1px solid #8b5e3c; /* рамка в бронзовом стиле */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8b5e3c, #6e4329); /* бронзовый эффект */
+  border-radius: 10px;
+  border: 2px solid #fdf6e3; /* чтобы был «узорный» отступ */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #a97142,
+    #6e4329
+  ); /* ярче при наведении */
+}
