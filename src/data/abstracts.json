@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Київська Русь",
+    "code": "kyivska_rus",
+    "image": "/images/kyivska_rus.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "date": "882–1240"
+  },
+  {
+    "id": 2,
+    "title": "Галицько-Волинське князівство",
+    "code": "halytsko_volynske",
+    "image": "/images/halytsko_volynske.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "date": "1199–1349"
+  },
+  {
+    "id": 3,
+    "title": "Козацька держава",
+    "code": "kozatska_derzhava",
+    "image": "/images/kozatska_derzhava.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "date": "1648–1764"
+  },
+  {
+    "id": 4,
+    "title": "Україна у складі Російської імперії",
+    "code": "ukr_ros_empire",
+    "image": "/images/ukr_ros_empire.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "date": "1793–1917"
+  },
+  {
+    "id": 5,
+    "title": "Українська революція 1917–1921 рр.",
+    "code": "ukr_revolution_1917",
+    "image": "/images/ukr_revolution_1917.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "date": "1917–1921"
+  },
+  {
+    "id": 6,
+    "title": "Україна в роки Другої світової війни",
+    "code": "ww2_ukraine",
+    "image": "/images/ww2_ukraine.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "date": "1939–1945"
+  },
+  {
+    "id": 7,
+    "title": "Незалежність України",
+    "code": "independence_ukraine",
+    "image": "/images/independence_ukraine.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "date": "1991 – сьогодні"
+  }
+]
