@@ -2,6 +2,9 @@
 @theme {
   --font-primary: 'Roboto', 'san-serif';
   --font-secondary: 'Caveat';
+  --font-thirdy: 'Cinzel';
+  --font-quarter: 'Playfair Display';
+  --font-fifth: 'Seymour One';
 }
 /* Для всех браузеров */
 * {
