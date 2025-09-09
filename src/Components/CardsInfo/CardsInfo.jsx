@@ -10,37 +10,37 @@ export function CardsInfo () {
 
   const cards = [
     {
-      img: './src/public/assets/pale.png',
+      img: '/assets/pale.png',
       title: 'Первісність на території України',
       desc: 'Короткий опис теми або вступ до матеріалу.'
     },
     {
-      img: './src/public/assets/pale.png',
+      img: '/assets/pale.png',
       title: 'Київська Русь',
       desc: 'Огляд формування та розвитку Київської держави.'
     },
     {
-      img: './src/public/assets/pale.png',
+      img: '/assets/pale.png',
       title: 'Галицько-Волинське князівство',
       desc: 'Основні події та діячі Галицько-Волинської держави.'
     },
     {
-      img: './src/public/assets/pale.png',
+      img: '/assets/pale.png',
       title: 'Козацька доба',
       desc: 'Короткий опис про зародження козацтва та його роль.'
     },
     {
-      img: './src/public/assets/pale.png',
+      img: '/assets/pale.png',
       title: 'Козацька доба',
       desc: 'Короткий опис про зародження козацтва та його роль.'
     },
     {
-      img: './src/public/assets/pale.png',
+      img: '/assets/pale.png',
       title: 'Козацька доба',
       desc: 'Короткий опис про зародження козацтва та його роль.'
     },
     {
-      img: './src/public/assets/pale.png',
+      img: '/assets/pale.png',
       title: 'Козацька доба',
       desc: 'Короткий опис про зародження козацтва та його роль.'
     }

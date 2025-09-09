@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Стародавня історія України",
     "code": "starodavna_ukr",
-    "image": "./src/public/assets/starodavna_ukr.png",
+    "image": "/assets/starodavna_ukr.png",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
