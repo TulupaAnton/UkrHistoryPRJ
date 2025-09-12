@@ -1,6 +1,6 @@
 import AbstractsData from '../../data/abstracts.json'
 import { useState } from 'react'
-
+import { Link } from 'react-router-dom'
 export function Abstract () {
   const [query, setQuery] = useState('')
   const [activeCategory, setActiveCategory] = useState('Усі')
@@ -63,7 +63,7 @@ export function Abstract () {
           />
           <span className='absolute top-0 right-0 h-full w-12 flex items-center justify-center text-[#5a381e]'>
             <svg
-              className='w-5 h-5'
+              className='w-5L clas h-5'
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
@@ -108,9 +108,12 @@ export function Abstract () {
                   <h2 className='text-2xl text-center font-fifth font-bold text-[#5a381e] line-clamp-2'>
                     {note.title}
                   </h2>
-                  <button className='mt-4 w-full bg-[#8b5e3c] hover:bg-[#a37250] text-white py-2 rounded-lg shadow-inner font-semibold transition-colors'>
+                  <Link
+                    to='/AncientHistoryPage'
+                    className='mt-4 text-center w-full bg-[#8b5e3c] hover:bg-[#a37250] text-white py-2 rounded-lg shadow-inner font-semibold transition-colors'
+                  >
                     Переглянути
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}

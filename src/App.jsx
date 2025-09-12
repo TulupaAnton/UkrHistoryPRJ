@@ -6,6 +6,7 @@ import { Tests } from './Pages/Testtt/Tests'
 import { About } from './Pages/About/About'
 import { Main } from './Pages/MainPage/Main'
 import { Footer } from './Components/Footer/Footer'
+import { AncientHistoryPage } from './Pages/AncientHistoryPage/AncientHistoryPage'
 
 function App () {
   return (
@@ -17,6 +18,7 @@ function App () {
         <Route path='/Abstarcts' element={<Abstract />} />
         <Route path='/Tests' element={<Tests />} />
         <Route path='/About' element={<About />} />
+        <Route path='/AncientHistoryPage' element={<AncientHistoryPage />} />
       </Routes>
       <Footer />
     </>
