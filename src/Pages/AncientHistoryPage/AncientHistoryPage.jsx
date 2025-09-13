@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import { TooltipImage } from '../../store/TooltipImage'
+import { Skif } from './Skif/Skif'
+import { Sarmati } from './Sarmari/Sarmari'
+import { Kolonia } from './Kolonia/Kolonia'
 
 export function AncientHistoryPage () {
   const [activePeriod, setActivePeriod] = useState(0)
@@ -106,7 +109,7 @@ export function AncientHistoryPage () {
             </div>
           ))}
         </div>
-        <div class='absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent'></div>
+        <div className='absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent'></div>
       </div>
 
       {/* Stone Age Section */}
@@ -728,7 +731,7 @@ export function AncientHistoryPage () {
         </div>
 
         {/* Место для изображений */}
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2  gap-6 mt-8'>
           <div className='bg-gray-700/50 rounded-xl p-4 text-center'>
             <img src='./assets/vase.jpg' alt='Трипільська кераміка' />
             <p className='text-gray-400 text-sm'>Трипільська кераміка</p>
@@ -739,13 +742,13 @@ export function AncientHistoryPage () {
             <p className='text-gray-400 text-sm'>Трипільські протоміста</p>
           </div>
           <div className='bg-gray-700/50 w-full rounded-xl p-4 text-center'>
-            <img src='./assets/karta_trip.jpg' alt='Карта' />
+            <img src='./assets/kartaTrip.jpg' alt='Карта' />
             <p className='text-gray-400 text-sm'>Карта розселення трипільців</p>
           </div>
 
           <div className='bg-gray-700/50 w-full rounded-xl p-4 text-center'>
             <img
-              src='./assets/unnamed.gif'
+              src='./assets/domik.jpg'
               alt='   Глиняна моделька трипільського храму/будиночка'
             />
             <p className='text-gray-400 text-sm'>
@@ -753,6 +756,424 @@ export function AncientHistoryPage () {
             </p>
           </div>
         </div>
+      </div>
+      {/* //! Середньостогівська культура */}
+      <div className='w-full  mx-auto px-4'>
+        {/* Основной блок культуры */}
+        <div className='bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-10 shadow-2xl border-2 border-amber-600 border-opacity-30 relative overflow-hidden mt-8'>
+          {/* Декоративные элементы */}
+          <div className='absolute top-0 left-0 w-32 h-32 bg-amber-500 rounded-full opacity-10 blur-3xl -translate-x-16 -translate-y-16'></div>
+          <div className='absolute bottom-0 right-0 w-40 h-40 bg-amber-600 rounded-full opacity-10 blur-3xl translate-x-16 translate-y-16'></div>
+
+          {/* Заголовок */}
+          <div className='text-center mb-10 relative z-10'>
+            <h1 className='font-bold text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 mb-4'>
+              Середньостогівська культура
+            </h1>
+            <div className='w-32 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto rounded-full'></div>
+          </div>
+
+          {/* Хронология */}
+          <div className='mb-8 text-center'>
+            <p className='text-2xl text-amber-300 font-semibold mb-2'>
+              Хронологічні межі:
+              <span className='text-white ml-2'>V-IV тис. до н.е.</span>
+            </p>
+          </div>
+
+          {/* Территория */}
+          <div className='mb-8 bg-gray-700 bg-opacity-50 rounded-xl p-6 border border-amber-500 border-opacity-20'>
+            <h2 className='text-2xl font-semibold text-amber-300 mb-4 flex items-center'>
+              <span className='w-3 h-3 bg-amber-400 rounded-full mr-3'></span>
+              Територія поширення
+            </h2>
+            <p className='text-xl text-gray-200'>
+              Степове Подніпров'я, Приазов'я, басейн Сіверського Дінця
+            </p>
+          </div>
+
+          {/* Господарство */}
+          <div className='mb-8 bg-gray-700 bg-opacity-50 rounded-xl p-6 border border-amber-500 border-opacity-20'>
+            <h2 className='text-2xl font-semibold text-amber-300 mb-4 flex items-center'>
+              <span className='w-3 h-3 bg-amber-400 rounded-full mr-3'></span>
+              Господарство
+            </h2>
+            <div className='space-y-3 text-xl text-gray-200'>
+              <p className='flex items-start'>
+                <span className='text-amber-400 mr-3 text-2xl'>•</span>
+                <span>Скотарська археологічна культура</span>
+              </p>
+              <p className='flex items-start'>
+                <span className='text-amber-400 mr-3 text-2xl'>•</span>
+                <span>Напівкочовий спосіб життя</span>
+              </p>
+            </div>
+          </div>
+
+          {/* Религия и погребения */}
+          <div className='mb-8 bg-gray-700 bg-opacity-50 rounded-xl p-6 border border-amber-500 border-opacity-20'>
+            <h2 className='text-2xl font-semibold text-amber-300 mb-4 flex items-center'>
+              <span className='w-3 h-3 bg-amber-400 rounded-full mr-3'></span>
+              Вірування та поховання
+            </h2>
+            <div className='space-y-3 text-xl text-gray-200'>
+              <p className='flex items-start'>
+                <span className='text-amber-400 mr-3 text-2xl'>•</span>
+                <span>Язичники</span>
+              </p>
+              <p className='flex items-start'>
+                <span className='text-amber-400 mr-3 text-2xl'>•</span>
+                <span>Померлих хоронили прямо в ямах</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Вывод */}
+        <div className='bg-gradient-to-r from-amber-900 to-amber-800 rounded-2xl p-8 mt-8 border-2 border-amber-600 border-opacity-30'>
+          <h2 className='text-3xl font-bold text-amber-200 text-center mb-6'>
+            Висновок
+          </h2>
+          <div className='grid md:grid-cols-2 gap-6 text-xl text-gray-200'>
+            <div className='text-center p-4 bg-amber-900 bg-opacity-30 rounded-xl border border-amber-500 border-opacity-20'>
+              <h3 className='text-2xl font-semibold text-amber-300 mb-3'>
+                Трипільці
+              </h3>
+              <p>Землероби, переважно на Правобережжі</p>
+            </div>
+            <div className='text-center p-4 bg-amber-900 bg-opacity-30 rounded-xl border border-amber-500 border-opacity-20'>
+              <h3 className='text-2xl font-semibold text-amber-300 mb-3'>
+                Середньостогівці
+              </h3>
+              <p>Скотарі, переважно на Лівобережжі</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* //! Бронзовий вік  */}
+      <div className='w-full max-w-4xl mx-auto px-4 py-8'>
+        {/* Основной блок Бронзового века */}
+        <div className='bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 shadow-2xl border-2 border-amber-600 border-opacity-30 relative overflow-hidden'>
+          {/* Заголовок */}
+          <div className='text-center mb-8'>
+            <h1 className='text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-amber-500 mb-4'>
+              Бронзовий вік
+            </h1>
+            <p className='text-2xl text-amber-300 font-semibold'>
+              II тис. до н.е.
+            </p>
+          </div>
+
+          {/* Основные факты */}
+          <div className='grid md:grid-cols-2 gap-6 mb-8'>
+            <div className='bg-gray-700 bg-opacity-50 rounded-xl p-6 border border-amber-500 border-opacity-20'>
+              <h3 className='text-xl font-semibold text-amber-300 mb-3 flex items-center'>
+                <span className='w-2 h-2 bg-amber-400 rounded-full mr-3'></span>
+                Технології
+              </h3>
+              <p className='text-lg text-gray-200'>
+                Перший сплав (мідь + олово) - бронза
+              </p>
+            </div>
+
+            <div className='bg-gray-700 bg-opacity-50 rounded-xl p-6 border border-amber-500 border-opacity-20'>
+              <h3 className='text-xl font-semibold text-amber-300 mb-3 flex items-center'>
+                <span className='w-2 h-2 bg-amber-400 rounded-full mr-3'></span>
+                Поховання
+              </h3>
+              <p className='text-lg text-gray-200'>
+                <span
+                  className='text-amber-400 underline cursor-pointer hover:text-amber-300 transition-colors'
+                  onClick={() =>
+                    document
+                      .getElementById('kurgan-modal')
+                      .classList.remove('hidden')
+                  }
+                >
+                  Кургани
+                </span>{' '}
+                - великі земляні насипи над похованням
+              </p>
+            </div>
+          </div>
+
+          {/* Суспільний поділ праці */}
+          <div className='bg-gray-700 bg-opacity-50 rounded-xl p-6 border border-amber-500 border-opacity-20 mb-6'>
+            <h3 className='text-2xl font-semibold text-amber-300 mb-4 text-center'>
+              Другий суспільний поділ праці
+            </h3>
+            <p className='text-xl text-gray-200 text-center mb-4'>
+              Від землеробів і скотарів відокремлюються ремісники
+            </p>
+
+            {/* Важное примечание */}
+            <div className='bg-amber-900 bg-opacity-30 rounded-lg p-4 border-2 border-amber-600 border-opacity-40 mt-4'>
+              <h4 className='text-lg font-bold text-amber-300 mb-2 flex items-center'>
+                <span className='text-amber-400 mr-2'>⚠️</span>
+                Не переплутай!
+              </h4>
+              <div className='space-y-2 text-gray-200'>
+                <p className='flex items-start'>
+                  <span className='text-amber-400 mr-2 text-lg'>•</span>
+                  <span>
+                    Перший суспільний поділ праці – відокремлення скотарства від
+                    землеробства (енеоліт)
+                  </span>
+                </p>
+                <p className='flex items-start'>
+                  <span className='text-amber-400 mr-2 text-lg'>•</span>
+                  <span>
+                    Другий суспільний поділ праці – відокремлення ремесла від
+                    скотарства і землеробства (бронзова доба)
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Достижения */}
+          <div className='bg-gray-700 bg-opacity-50 rounded-xl p-6 border border-amber-500 border-opacity-20'>
+            <h3 className='text-xl font-semibold text-amber-300 mb-3 flex items-center'>
+              <span className='w-2 h-2 bg-amber-400 rounded-full mr-3'></span>
+              Важливі досягнення
+            </h3>
+            <p className='text-lg text-gray-200 flex items-center'>
+              <span className='text-amber-400 mr-2 text-xl'>•</span>У цей період
+              приручили коня
+            </p>
+          </div>
+        </div>
+        <div
+          id='kurgan-modal'
+          className='hidden fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4'
+        >
+          <div className='bg-gray-800 rounded-2xl max-w-2xl max-h-full overflow-auto'>
+            <div className='relative'>
+              <button
+                className='absolute top-4 right-4 w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center text-white hover:bg-amber-700 transition-colors z-10'
+                onClick={() =>
+                  document
+                    .getElementById('kurgan-modal')
+                    .classList.add('hidden')
+                }
+              >
+                ✕
+              </button>
+              <img
+                src='./assets/kurgan.jpg'
+                alt='Курган - древнее захоронение'
+                className='w-full h-auto rounded-t-2xl'
+              />
+            </div>
+            <div className='p-4 text-center'>
+              <p className='text-amber-300 text-lg'>
+                Курган - великий земляной насип над древним захоронением
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* //! Ранній залізний вік */}
+      <div className='w-full max-w-4xl mx-auto px-4 py-8'>
+        <div className='bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 shadow-2xl border-2 border-amber-600 border-opacity-30'>
+          {/* Заголовок */}
+          <div className='text-center mb-8'>
+            <h1 className='text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-amber-500 mb-4'>
+              Ранній залізний вік
+            </h1>
+            <p className='text-2xl text-amber-300 font-semibold'>
+              (1 тис. до н.е.)
+            </p>
+          </div>
+
+          {/* Технологические достижения */}
+          <div className='bg-gray-700 bg-opacity-50 rounded-xl p-6 border border-amber-500 border-opacity-20 mb-6'>
+            <h3 className='text-2xl font-semibold text-amber-300 mb-4 flex items-center'>
+              <span className='w-3 h-3 bg-amber-400 rounded-full mr-3'></span>
+              Технологічний прорив
+            </h3>
+            <p className='text-xl text-gray-200'>
+              Люди навчилися плавити залізо, знаряддя з якого було міцнішим і
+              гострішим
+            </p>
+          </div>
+
+          {/* Разделение труда */}
+          <div className='bg-gray-700 bg-opacity-50 rounded-xl p-6 border border-amber-500 border-opacity-20 mb-6'>
+            <h3 className='text-2xl font-semibold text-amber-300 mb-4 flex items-center'>
+              <span className='w-3 h-3 bg-amber-400 rounded-full mr-3'></span>
+              Суспільний поділ праці
+            </h3>
+            <p className='text-xl text-gray-200 mb-3'>
+              Зросла продуктивність праці
+            </p>
+            <div className='bg-amber-900 bg-opacity-30 rounded-lg p-4 border-l-4 border-amber-500'>
+              <p className='text-lg text-amber-200'>
+                <b>Ремесло</b> - дрібне виробництво готових виробів, що
+                базується на ручній техніці без поділу праці - відокремилося від
+                землеробства
+              </p>
+            </div>
+          </div>
+
+          {/* Экономическое развитие */}
+          <div className='bg-gray-700 bg-opacity-50 rounded-xl p-6 border border-amber-500 border-opacity-20'>
+            <h3 className='text-2xl font-semibold text-amber-300 mb-4 flex items-center'>
+              <span className='w-3 h-3 bg-amber-400 rounded-full mr-3'></span>
+              Економічний розвиток
+            </h3>
+            <p className='text-xl text-gray-200'>
+              З'явилося виробництво товарів для обміну й продажу
+            </p>
+          </div>
+
+          {/* Дополнительная информация */}
+          <div className='mt-8 p-6 bg-amber-900 bg-opacity-20 rounded-xl border border-amber-600 border-opacity-30'>
+            <h4 className='text-lg font-semibold text-amber-300 mb-3'>
+              Наслідки розвитку металургії:
+            </h4>
+            <ul className='space-y-2 text-gray-200'>
+              <li className='flex items-start'>
+                <span className='text-amber-400 mr-2 text-lg'>•</span>
+                <span>Покращення якості знарядь праці</span>
+              </li>
+              <li className='flex items-start'>
+                <span className='text-amber-400 mr-2 text-lg'>•</span>
+                <span>Розвиток спеціалізації в суспільстві</span>
+              </li>
+              <li className='flex items-start'>
+                <span className='text-amber-400 mr-2 text-lg'>•</span>
+                <span>Зростання продуктивності сільського господарства</span>
+              </li>
+              <li className='flex items-start'>
+                <span className='text-amber-400 mr-2 text-lg'>•</span>
+                <span>Поява товарно-грошових відносин</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {/* //! Кімірійці */}
+      <div className='w-full max-w-6xl mx-auto px-4 py-8'>
+        <div className='bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 shadow-2xl border-2 border-amber-600 border-opacity-30'>
+          {/* Заголовок и основная информация */}
+          <div className='grid md:grid-cols-2 gap-8 items-start mb-8'>
+            {/* Текстовая информация */}
+            <div>
+              <div className='text-center mb-8'>
+                <h1 className='text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-amber-500 mb-4'>
+                  Кіммерійці
+                </h1>
+                <p className='text-2xl text-amber-300 font-semibold'>
+                  IX-VII ст. до н.е.
+                </p>
+              </div>
+
+              <div className='space-y-4'>
+                <div className='flex items-start'>
+                  <span className='text-amber-400 text-xl mr-3'>•</span>
+                  <p className='text-lg text-gray-200'>
+                    Територія: Причорномор'я, Крим та Кавказ
+                  </p>
+                </div>
+
+                <div className='flex items-start'>
+                  <span className='text-amber-400 text-xl mr-3'>•</span>
+                  <p className='text-lg text-gray-200'>
+                    Перша згадка у творі "Одіссея" Гомера
+                  </p>
+                </div>
+
+                <div className='bg-amber-900 bg-opacity-30 rounded-lg p-4 border-l-4 border-amber-500'>
+                  <p className='text-lg text-amber-200 font-semibold'>
+                    Не мали власної держави
+                  </p>
+                </div>
+
+                <div className='flex items-start'>
+                  <span className='text-amber-400 text-xl mr-3'>•</span>
+                  <p className='text-lg text-gray-200'>
+                    Були військовим плем'ям, воювали <b>мали кіноту</b>
+                  </p>
+                </div>
+
+                <div className='flex items-start'>
+                  <span className='text-amber-400 text-xl mr-3'>•</span>
+                  <p className='text-lg text-gray-200'>
+                    Були язичниками, <b>ховали у курганах</b>
+                  </p>
+                </div>
+
+                <div className='flex items-start'>
+                  <span className='text-amber-400 text-xl mr-3'>•</span>
+                  <p className='text-lg text-gray-200'>
+                    Були переможені скіфами
+                  </p>
+                </div>
+                <div className='bg-amber-900 bg-opacity-30 rounded-lg p-4 border-l-4 border-amber-500'>
+                  <p className='text-lg text-amber-200 font-semibold'>
+                    Вперше на тереторії України почали плавити залізні знаряддя
+                    праці та зброю
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Изображение */}
+            <div className='relative'>
+              <div className='rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-500 border-opacity-30'>
+                <img
+                  src='./assets/kimiriy.jpg'
+                  alt='Кіммерійський воїн'
+                  className='w-full h-auto object-cover'
+                />
+              </div>
+              <div className='absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-3 text-center'>
+                <p className='text-sm'>Кімірійці на карті</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Дополнительная информация */}
+          <div className='mt-8 p-6 bg-amber-900 bg-opacity-20 rounded-xl border border-amber-600 border-opacity-30'>
+            <h4 className='text-lg font-semibold text-amber-300 mb-4 text-center'>
+              Історичне значення кіммерійців:
+            </h4>
+            <div className='grid md:grid-cols-2 gap-4 text-gray-200'>
+              <div className='flex items-start'>
+                <span className='text-amber-400 mr-2 text-lg'>•</span>
+                <span>
+                  Перший кочовий народ, який залишив значний слід в античних
+                  джерелах
+                </span>
+              </div>
+              <div className='flex items-start'>
+                <span className='text-amber-400 mr-2 text-lg'>•</span>
+                <span>Мастерське володіння кіннотою та лучна стрільба</span>
+              </div>
+              <div className='flex items-start'>
+                <span className='text-amber-400 mr-2 text-lg'>•</span>
+                <span>Вплинули на формування скіфської культури</span>
+              </div>
+              <div className='flex items-start'>
+                <span className='text-amber-400 mr-2 text-lg'>•</span>
+                <span>Залишили археологічні пам'ятки у вигляді курганів</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* //! Скіфи */}
+      <div>
+        <Skif />
+      </div>
+      {/* //! Сармати */}
+      <div>
+        <Sarmati />
+      </div>
+      {/* //! Колонія */}
+      <div>
+        <Kolonia />
       </div>
     </div>
   )
