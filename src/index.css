@@ -9,36 +9,47 @@
   --font-seven: '"Dela Gothic One"';
 }
 /* Для всех браузеров */
+/* Глобальные стили скроллбара для всего сайта */
 * {
   scrollbar-width: thin; /* Firefox */
-  scrollbar-color: #8b5e3c #fdf6e3; /* (ползунок, фон) */
-}
-body {
-  background-color: #fdf6e3;
+  scrollbar-color: #8b5e3c #1f1f1f; /* (ползунок, фон) для темной темы */
 }
 
 /* Для Chrome, Safari, Edge */
 *::-webkit-scrollbar {
-  width: 10px; /* вертикальный скролл */
-  height: 10px; /* горизонтальный скролл */
+  width: 12px; /* вертикальный скролл */
+  height: 12px; /* горизонтальный скролл */
+  transition: all 0.3s ease;
 }
 
 *::-webkit-scrollbar-track {
-  background: #fdf6e3; /* светлый пергамент */
-  border-radius: 10px;
-  border: 1px solid #8b5e3c; /* рамка в бронзовом стиле */
+  background: #1f1f1f; /* темный фон под скроллбар */
+  border-radius: 8px;
+  border: 1px solid #8b5e3c; /* бронзовая рамка */
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 *::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #8b5e3c, #6e4329); /* бронзовый эффект */
-  border-radius: 10px;
-  border: 2px solid #fdf6e3; /* чтобы был «узорный» отступ */
+  background: linear-gradient(
+    180deg,
+    #8b5e3c,
+    #6e4329,
+    #8b5e3c
+  ); /* бронзовый градиент */
+  border-radius: 8px;
+  border: 2px solid #1f1f1f; /* чтобы был контраст с темным фоном */
+  box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.2),
+    0 0 6px rgba(139, 94, 60, 0.4);
 }
 
 *::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(
     180deg,
-    #a97142,
-    #6e4329
-  ); /* ярче при наведении */
+    #a77c4d,
+    #8b5e3c,
+    #a77c4d
+  ); /* при наведении подсветка */
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3),
+    0 0 8px rgba(139, 94, 60, 0.5);
 }
