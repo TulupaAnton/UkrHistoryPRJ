@@ -7,6 +7,7 @@ import { About } from './Pages/About/About'
 import { Main } from './Pages/MainPage/Main'
 import { Footer } from './Components/Footer/Footer'
 import { AncientHistoryPage } from './Pages/AncientHistoryPage/AncientHistoryPage'
+import { ButtonUp } from './Components/ButtonUp/ButtonUp'
 
 function App () {
   return (
@@ -20,6 +21,7 @@ function App () {
         <Route path='/About' element={<About />} />
         <Route path='/AncientHistoryPage' element={<AncientHistoryPage />} />
       </Routes>
+      <ButtonUp />
       <Footer />
     </>
   )
