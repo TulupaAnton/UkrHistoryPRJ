@@ -113,7 +113,7 @@ export function Abstract () {
                     <img
                       src={note.image}
                       alt={note.title}
-                      className='w-full h-48 object-cover'
+                      className='w-full h-100 object-cover'
                     />
                     <span className='absolute top-3 right-3 bg-amber-600 text-white text-xs px-3 py-1 rounded'>
                       {note.date}

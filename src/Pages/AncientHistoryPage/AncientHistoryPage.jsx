@@ -3,13 +3,15 @@ import { TooltipImage } from '../../store/TooltipImage'
 import { Skif } from './Skif/Skif'
 import { Sarmati } from './Sarmari/Sarmari'
 import { Kolonia } from './Kolonia/Kolonia'
+import { Slovani } from './Slovani/Slovani'
+import { Pereselna } from './Pereselena/Pereselena'
 
 export function AncientHistoryPage () {
   const [activePeriod, setActivePeriod] = useState(0)
   const [activeSubPeriod, setActiveSubPeriod] = useState(0)
 
   return (
-    <div className='min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-100 flex flex-col relative overflow-hidden'>
+    <div className='min-h-screen bg-gradient-to-b mt-5 from-gray-900 via-gray-800 to-gray-900 text-gray-100 flex flex-col relative overflow-hidden'>
       {/* Декоративные элементы фона */}
       <div className='absolute top-0 left-0 w-full h-full opacity-10'>
         <div className='absolute top-10% left-5% w-72 h-72 bg-amber-400 rounded-full blur-3xl'></div>
@@ -1174,6 +1176,14 @@ export function AncientHistoryPage () {
       {/* //! Колонія */}
       <div>
         <Kolonia />
+      </div>
+      {/* //! Переселення народів */}
+      <div>
+        <Slovani />
+      </div>
+      {/* //! Переселення слов'ян */}
+      <div>
+        <Pereselna />
       </div>
     </div>
   )

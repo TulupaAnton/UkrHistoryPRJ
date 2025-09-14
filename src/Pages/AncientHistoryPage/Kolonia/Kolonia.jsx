@@ -98,7 +98,7 @@ export function Kolonia () {
               <img
                 src='./assets/karta-grek.png'
                 alt='Руїни Херсонесу'
-                className='w-full h-120 object-cover'
+                className='w-full h-150 object-cover'
               />
               <p className='text-sm text-amber-400 mt-1 text-center'>
                 Мапа античних міст держав на території України
