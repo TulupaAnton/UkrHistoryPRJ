@@ -27,7 +27,7 @@ export function Info () {
 
         <div className='mt-12'>
           <Link
-            to='/Abstarcts'
+            to='/abstracts'
             className='inline-block relative group font-semibold text-xl sm:text-2xl px-8 py-4 rounded-xl bg-gradient-to-r from-amber-600 to-amber-800 text-white shadow-lg hover:from-amber-700 hover:to-amber-900 transition-all duration-300 border-2 border-amber-500 border-opacity-30 hover:shadow-2xl hover:scale-105'
           >
             <span className='relative z-10'>Усі Конспекти</span>

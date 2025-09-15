@@ -10,7 +10,7 @@
     "id": 2,
     "title": "Київська Русь",
     "code": "kyivska_rus",
-    "image": "/images/kyivska_rus.jpg",
+    "image": "/assets/Kyiv.png",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "date": "882–1240"
   },

@@ -126,7 +126,7 @@ export function Abstract () {
                     </h2>
 
                     <Link
-                      to={`/AncientHistoryPage`}
+                      to={`/abstract/${note.code}`}
                       className='block w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded text-center font-semibold transition-colors'
                     >
                       Переглянути

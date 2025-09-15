@@ -16,13 +16,13 @@ export function CardsInfo () {
       img: '/assets/pale.png',
       title: 'Первісність на території України',
       desc: 'Короткий опис теми або вступ до матеріалу.',
-      path: '/topic/primitive'
+      path: '/abstract/starodavna_ukr'
     },
     {
-      img: '/assets/pale.png',
+      img: '/assets/Kyiv.png',
       title: 'Київська Русь',
       desc: 'Огляд формування та розвитку Київської держави.',
-      path: '/topic/kyivan-rus'
+      path: '/abstract/kyivska_rus'
     },
     {
       img: '/assets/pale.png',
@@ -170,39 +170,6 @@ export function CardsInfo () {
           ))}
         </div>
       </div>
-
-      {/* Индикатор прокрутки */}
-      <div className='flex justify-center mt-8'>
-        <div className='w-24 h-1 bg-gray-700 rounded-full'>
-          <div
-            className='h-1 bg-amber-500 rounded-full transition-all duration-300'
-            style={{ width: '30%' }}
-          ></div>
-        </div>
-      </div>
-
-      {/* Стили для скрытия scrollbar */}
-      <style jsx>{`
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-        .line-clamp-2 {
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-        .line-clamp-3 {
-          display: -webkit-box;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-      `}</style>
     </div>
   )
 }
