@@ -27,7 +27,7 @@ export function Skif () {
             onClick={() => setShowMap(true)}
           >
             <img
-              src='/assets/skifi.png'
+              src='../../assets/skifi.png'
               alt='Карта Великої Скіфії'
               className='w-full h-120 object-cover rounded-lg border-2 border-amber-500 border-opacity-30'
             />
@@ -63,7 +63,7 @@ export function Skif () {
               onClick={() => setShowPectoral(true)}
             >
               <img
-                src='/assets/Pektoral.JPG'
+                src='../../assets/Pektoral.JPG'
                 alt='Скіфська Пектораль'
                 className='w-full h-120 object-cover rounded-lg border-2 border-amber-500 border-opacity-30'
               />
@@ -78,7 +78,7 @@ export function Skif () {
               onClick={() => setShowComb(true)}
             >
               <img
-                src='/assets/grebin.jpg'
+                src='../../assets/grebin.jpg'
                 alt='Золотий гребінь'
                 className='w-full h-120 object-cover rounded-lg border-2 border-amber-500 border-opacity-30'
               />
@@ -120,7 +120,7 @@ export function Skif () {
                 ✕
               </button>
               <img
-                src='/assets/scythian-map.jpg'
+                src='../../assets/scythian-map.jpg'
                 alt='Карта Великої Скіфії'
                 className='w-full h-auto rounded-t-2xl'
               />
@@ -149,7 +149,7 @@ export function Skif () {
                 ✕
               </button>
               <img
-                src='/assets/scythian-pectoral.jpg'
+                src='../../assets/scythian-pectoral.jpg'
                 alt='Скіфська пектораль'
                 className='w-full h-auto rounded-t-2xl'
               />
@@ -178,7 +178,7 @@ export function Skif () {
                 ✕
               </button>
               <img
-                src='/assets/scythian-comb.jpg'
+                src='../../assets/scythian-comb.jpg'
                 alt='Золотий гребінь'
                 className='w-full h-auto rounded-t-2xl'
               />

@@ -103,7 +103,7 @@ export function Union () {
                 </div>
                 <div className='h-80 flex items-center justify-center'>
                   <img
-                    src='./assets/union.jpg'
+                    src='../../assets/union.jpg'
                     alt='Карта розселення словʼянських племен на території України'
                     className='max-h-full max-w-full object-contain rounded-lg border border-amber-600 border-opacity-30'
                   />

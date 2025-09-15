@@ -67,7 +67,7 @@ export function Kimiriy () {
           <div className='relative'>
             <div className='rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-500 border-opacity-30'>
               <img
-                src='./assets/kimiriy.jpg'
+                src='../../assets/kimiriy.jpg'
                 alt='Кіммерійський воїн'
                 className='w-full h-auto object-cover'
               />

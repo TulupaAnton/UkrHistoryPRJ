@@ -107,7 +107,7 @@ export function Bronze () {
               ✕
             </button>
             <img
-              src='./assets/kurgan.jpg'
+              src='../../assets/kurgan.jpg'
               alt='Курган - древнее захоронение'
               className='w-full h-auto rounded-t-2xl'
             />

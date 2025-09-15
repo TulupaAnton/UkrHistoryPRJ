@@ -30,7 +30,7 @@ export function Early () {
           <span>
             <TooltipImage
               text="кам'яне ручне рубило"
-              imgSrc='./assets/rubilo.jpg'
+              imgSrc='../../assets/rubilo.jpg'
               alt="Кам'яне ручне рубило"
             />
           </span>

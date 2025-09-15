@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { TooltipImage } from '../../store/TooltipImage'
+
 import { Skif } from '../../Components/AncientHistory/Skif/Skif'
 import { Sarmati } from '../../Components/AncientHistory/Sarmari/Sarmari'
 import { Kolonia } from '../../Components/AncientHistory/Kolonia/Kolonia'

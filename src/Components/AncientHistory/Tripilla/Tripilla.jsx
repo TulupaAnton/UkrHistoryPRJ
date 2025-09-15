@@ -96,22 +96,25 @@ export function Tripilla () {
       {/* Место для изображений */}
       <div className='grid grid-cols-1 md:grid-cols-2  gap-6 mt-8'>
         <div className='bg-gray-700/50 rounded-xl p-4 text-center'>
-          <img src='./assets/vase.jpg' alt='Трипільська кераміка' />
+          <img src='../../assets/vase.jpg' alt='Трипільська кераміка' />
           <p className='text-gray-400 text-sm'>Трипільська кераміка</p>
         </div>
 
         <div className='bg-gray-700/50 rounded-xl p-4 text-center'>
-          <img src='./assets/protomisto.avif' alt='Трипільські протоміста' />
+          <img
+            src='../../assets/protomisto.avif'
+            alt='Трипільські протоміста'
+          />
           <p className='text-gray-400 text-sm'>Трипільські протоміста</p>
         </div>
         <div className='bg-gray-700/50 w-full rounded-xl p-4 text-center'>
-          <img src='./assets/kartaTrip.jpg' alt='Карта' />
+          <img src='../../assets/kartaTrip.jpg' alt='Карта' />
           <p className='text-gray-400 text-sm'>Карта розселення трипільців</p>
         </div>
 
         <div className='bg-gray-700/50 w-full rounded-xl p-4 text-center'>
           <img
-            src='./assets/domik.jpg'
+            src='../../assets/domik.jpg'
             alt='   Глиняна моделька трипільського храму/будиночка'
           />
           <p className='text-gray-400 text-sm'>

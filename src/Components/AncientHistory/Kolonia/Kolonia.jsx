@@ -77,7 +77,7 @@ export function Kolonia () {
               <p>поблизу сучасного Севастополя</p>
               <div className='mt-4 rounded-lg overflow-hidden'>
                 <img
-                  src='./assets/Chersonesos_columns.jpg'
+                  src='../../assets/Chersonesos_columns.jpg'
                   alt='Руїни Херсонесу'
                   className='w-full h-60 object-cover'
                 />
@@ -96,7 +96,7 @@ export function Kolonia () {
           <div className='mt-6  flex justify-center'>
             <div className='max-w-5xl w-full  rounded-lg overflow-hidden'>
               <img
-                src='./assets/karta-grek.png'
+                src='../../assets/karta-grek.png'
                 alt='Руїни Херсонесу'
                 className='w-full h-150 object-cover'
               />
@@ -170,7 +170,7 @@ export function Kolonia () {
                 <p className='text-gray-200'>Зображують людей і тварин</p>
                 <div className='mt-4 rounded-lg overflow-hidden'>
                   <img
-                    src='/assets/Master_Ahilla.jpg'
+                    src='../../assets/Master_Ahilla.jpg'
                     alt='Грецька кераміка'
                     className='w-full h-120 object-cover'
                   />

@@ -76,7 +76,7 @@ export function Stoyanki () {
                 <div className='absolute -inset-2 bg-gradient-to-r from-amber-400/10 to-amber-600/10 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500'></div>
                 <div className='relative overflow-hidden rounded-2xl shadow-2xl border border-amber-500/20'>
                   <img
-                    src='./assets/stoyanki.jpg'
+                    src='../../assets/stoyanki.jpg'
                     alt='Археологічна стоянка'
                     className='w-full h-auto transform group-hover:scale-110 transition-transform duration-700'
                   />
@@ -95,7 +95,7 @@ export function Stoyanki () {
                 <div className='absolute -inset-2 bg-gradient-to-r from-amber-400/20 to-amber-600/20 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500'></div>
                 <div className='relative overflow-hidden rounded-2xl shadow-2xl bg-black/30 p-3 border-2 border-amber-500/40'>
                   <img
-                    src='./assets/hishin-removebg-preview.png'
+                    src='../../assets/hishin-removebg-preview.png'
                     alt='Первісне житло'
                     className='w-full h-auto transform group-hover:scale-110 transition-transform duration-700'
                   />

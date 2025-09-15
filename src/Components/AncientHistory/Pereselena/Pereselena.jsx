@@ -136,7 +136,7 @@ export function Pereselna () {
           <div className='rounded-lg overflow-hidden'>
             <div className='bg-amber-900 bg-opacity-20 h-150 flex items-center justify-center'>
               <span className='text-amber-300 text-lg'>
-                <img src='./assets/slovani.jpeg' alt='' />
+                <img src='../../assets/slovani.jpeg' alt='' />
               </span>
             </div>
             <p className='text-sm text-amber-400 mt-2 text-center'>
