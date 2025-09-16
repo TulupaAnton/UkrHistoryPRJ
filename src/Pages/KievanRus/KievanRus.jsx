@@ -1,5 +1,8 @@
 import { Askold } from '../../Components/KievanRus/Askold'
+import { Igor } from '../../Components/KievanRus/Igor'
 import { Oleg } from '../../Components/KievanRus/Oleg'
+import { Olga } from '../../Components/KievanRus/Olga'
+import { Svatoslav } from '../../Components/KievanRus/Svatoslav'
 
 export function KievanRus () {
   return (
@@ -11,6 +14,18 @@ export function KievanRus () {
       {/* //! Олег*/}
       <div>
         <Oleg />
+      </div>
+      {/* //! Igor */}
+      <div>
+        <Igor />
+      </div>
+      {/* //! Olga */}
+      <div>
+        <Olga />
+      </div>
+      {/* //! Святослав */}
+      <div>
+        <Svatoslav />
       </div>
     </div>
   )

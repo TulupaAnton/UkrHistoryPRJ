@@ -79,7 +79,28 @@ export function Oleg () {
                   </span>
                 </p>
               </div>
+              <div className='p-6 bg-amber-900/30 rounded-xl border-l-4 border-green-400 backdrop-blur-sm'>
+                <p className='text-xl font-semibold'>
+                  Звільнив підкорені племена від сплати данини Хазарському
+                  каганату
+                </p>
+              </div>
+              <div className='p-6 bg-gradient-to-r from-green-900/40 to-emerald-800/30 rounded-xl border-l-4 border-amber-400 backdrop-blur-sm relative overflow-hidden'>
+                {/* Декоративные элементы */}
+                <div className='absolute -top-4 -right-4 w-20 h-20 bg-green-500 rounded-full opacity-20 blur-lg'></div>
+                <div className='absolute -bottom-4 -left-4 w-16 h-16 bg-emerald-400 rounded-full opacity-20 blur-lg'></div>
 
+                <p className='text-xl font-semibold relative z-10'>
+                  <span className='text-2xl text-green-300 font-bold'>
+                    911р.
+                  </span>{' '}
+                  Олег прибиває щит на ворота Царгорода, та добивається{' '}
+                  <span className='text-green-300 font-bold underline decoration-yellow-400'>
+                    вигідних умов
+                  </span>{' '}
+                  (торгівля без мита)
+                </p>
+              </div>
               <div className='p-6 bg-amber-900/30 rounded-xl border-l-4 border-amber-400 backdrop-blur-sm'>
                 <p className='text-xl font-semibold'>
                   Розширив кордони Русі, сприяв її централізації
@@ -93,6 +114,7 @@ export function Oleg () {
                     <span className='text-amber-400 mr-3 text-xl'>•</span>
                     Підкорив неслов'янські племена меря, чудь і весь
                   </li>
+
                   <li className='flex items-start'>
                     <span className='text-amber-400 mr-3 text-xl'>•</span>
                     Об'єднав Північну і Південну Русь
@@ -102,8 +124,7 @@ export function Oleg () {
 
               <div className='p-6 bg-amber-900/30 rounded-xl border-l-4 border-green-400 backdrop-blur-sm'>
                 <p className='text-xl font-semibold'>
-                  Звільнив підкорені племена від сплати данини Хазарському
-                  каганату
+                  907 та 911рр. Олег здійснив вдалі походи за Візантію
                 </p>
               </div>
 
