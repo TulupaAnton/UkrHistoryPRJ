@@ -4,6 +4,7 @@ import { Oleg } from '../../Components/KievanRus/Oleg'
 import { Olga } from '../../Components/KievanRus/Olga'
 import { Svatoslav } from '../../Components/KievanRus/Svatoslav'
 import { Volodimir } from '../../Components/KievanRus/Volodimir'
+import { Yarik } from '../../Components/KievanRus/Yarik'
 
 export function KievanRus () {
   return (
@@ -31,6 +32,10 @@ export function KievanRus () {
       {/* //! VOLODIMIR */}
       <div>
         <Volodimir />
+      </div>
+      {/* //!YARA */}
+      <div>
+        <Yarik />
       </div>
     </div>
   )

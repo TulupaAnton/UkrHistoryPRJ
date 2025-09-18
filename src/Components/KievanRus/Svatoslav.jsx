@@ -138,7 +138,7 @@ export function Svatoslav () {
 
               <div className='mt-6 rounded-xl overflow-hidden shadow-lg'>
                 <img
-                  src='../../../assets/karta_svatoslav.png'
+                  src='../../../assets/SvatKarta.jpg'
                   alt='Східний похід Святослава'
                   className='w-full h-auto'
                 />
@@ -222,13 +222,6 @@ export function Svatoslav () {
                     Приєднання земель
                   </h3>
                   <p>Приєднав в'ятичів</p>
-                  <div className='mt-4 rounded-xl overflow-hidden shadow-lg'>
-                    <img
-                      src='../../../assets/Svatoslav_karta.jpg'
-                      alt='Карта завоювань Святослава'
-                      className='w-full h-auto'
-                    />
-                  </div>
                 </div>
 
                 <div className='bg-purple-800/40 p-5 rounded-xl'>
