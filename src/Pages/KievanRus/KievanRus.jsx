@@ -1,8 +1,10 @@
 import { Askold } from '../../Components/KievanRus/Askold'
 import { Igor } from '../../Components/KievanRus/Igor'
+import { Monomah } from '../../Components/KievanRus/Monomah'
 import { Oleg } from '../../Components/KievanRus/Oleg'
 import { Olga } from '../../Components/KievanRus/Olga'
 import { Svatoslav } from '../../Components/KievanRus/Svatoslav'
+import { Triumvirat } from '../../Components/KievanRus/Triumvirat'
 import { Volodimir } from '../../Components/KievanRus/Volodimir'
 import { Yarik } from '../../Components/KievanRus/Yarik'
 
@@ -36,6 +38,14 @@ export function KievanRus () {
       {/* //!YARA */}
       <div>
         <Yarik />
+      </div>
+      {/* //! YARIKI */}
+      <div>
+        <Triumvirat />
+      </div>
+      {/* //! MoNOMAH */}
+      <div>
+        <Monomah />
       </div>
     </div>
   )

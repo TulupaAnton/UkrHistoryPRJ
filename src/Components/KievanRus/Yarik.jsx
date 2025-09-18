@@ -492,7 +492,7 @@ export function Yarik () {
                 clipRule='evenodd'
               />
             </svg>
-            <span>Наступна тема: Руська Правда та закони</span>
+            <span>Наступна тема: правління Ярославичів</span>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-4 w-4 md:h-5 md:w-5 text-amber-300'
