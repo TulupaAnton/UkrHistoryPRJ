@@ -2,7 +2,7 @@ export function Askold () {
   return (
     <div>
       {' '}
-      <div className='absolute top-0 left-0 w-full h-full opacity-10'>
+      <div className=' top-0 left-0 w-full h-full opacity-10'>
         <div className='absolute top-10% left-5% w-72 h-72 bg-blue-400 rounded-full blur-3xl'></div>
         <div className='absolute bottom-10% right-5% w-96 h-96 bg-purple-500 rounded-full blur-3xl'></div>
         <div className='absolute top-50% left-30% w-64 h-64 bg-indigo-400 rounded-full blur-3xl'></div>

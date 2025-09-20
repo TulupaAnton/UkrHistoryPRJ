@@ -49,7 +49,8 @@ export function BubbleMenuforRus () {
     { id: 'triumvirat', title: 'Тріумвірат', icon: <History size={16} /> },
     { id: 'monomah', title: 'Мономах', icon: <Crown size={16} /> },
     { id: 'mstislav', title: 'Мстислав', icon: <Shield size={16} /> },
-    { id: 'culture', title: 'Культура', icon: <Castle size={16} /> }
+    { id: 'culture', title: 'Культура', icon: <Castle size={16} /> },
+    { id: 'Tests', title: 'Тести', icon: <Castle size={16} /> }
   ]
 
   const filteredSections = sections.filter(s =>
