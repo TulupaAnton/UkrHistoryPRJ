@@ -10,7 +10,7 @@ import { Svatoslav } from '../../Components/KievanRus/Svatoslav'
 import { Triumvirat } from '../../Components/KievanRus/Triumvirat'
 import { Volodimir } from '../../Components/KievanRus/Volodimir'
 import { Yarik } from '../../Components/KievanRus/Yarik'
-import Test from '../Testtt/KyivRusTest/Test'
+import Quiz from '../Testtt/KyivRusTest/Quiz'
 
 export function KievanRus () {
   return (
@@ -70,7 +70,7 @@ export function KievanRus () {
 
       {/* TEST */}
       <div id='Tests'>
-        <Test />
+        <Quiz />
       </div>
     </div>
   )
