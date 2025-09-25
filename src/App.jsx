@@ -11,12 +11,13 @@ import { ButtonUp } from './Components/ButtonUp/ButtonUp'
 import { Abstract } from './Pages/Abstract/Abstract'
 import { KievanRus } from './Pages/KievanRus/KievanRus'
 import { Scroll } from './Components/AutoScroll/Scroll'
-
+import { GaliciaVolynPower } from './Pages/GaliciaVolynPower/GaliciaVolynPower'
 function DynamicHistoryPage () {
   const { code } = useParams()
   const pageMap = {
     starodavna_ukr: AncientHistoryPage,
-    kyivska_rus: KievanRus
+    kyivska_rus: KievanRus,
+    galica_volin: GaliciaVolynPower
     // другие страницы
   }
 
