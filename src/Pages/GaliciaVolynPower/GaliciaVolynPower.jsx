@@ -5,6 +5,7 @@ import { Navala } from '../../Components/GaliciaVolynPower/Navala'
 import { Posterity_of_Danil } from '../../Components/GaliciaVolynPower/Posterity_of_Danil'
 import { Roman } from '../../Components/GaliciaVolynPower/Roman'
 import { Smuta } from '../../Components/GaliciaVolynPower/Smuta'
+import { Galica_Test } from '../Testtt/GalicaVolynPower/Galica_Test'
 
 export function GaliciaVolynPower () {
   return (
@@ -29,6 +30,9 @@ export function GaliciaVolynPower () {
       </div>
       <div>
         <Culture />
+      </div>
+      <div>
+        <Galica_Test />
       </div>
     </div>
   )

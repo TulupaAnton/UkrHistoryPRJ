@@ -12,6 +12,7 @@ import { Abstract } from './Pages/Abstract/Abstract'
 import { KievanRus } from './Pages/KievanRus/KievanRus'
 import { Scroll } from './Components/AutoScroll/Scroll'
 import { GaliciaVolynPower } from './Pages/GaliciaVolynPower/GaliciaVolynPower'
+
 function DynamicHistoryPage () {
   const { code } = useParams()
   const pageMap = {
