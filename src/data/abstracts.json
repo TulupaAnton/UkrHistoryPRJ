@@ -18,14 +18,14 @@
     "id": 3,
     "title": "Галицько-Волинське князівство",
     "code": "galica_volin",
-    "image": "/images/halytsko_volynske.jpg",
+    "image": "/assets/Galica.png",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "date": "1199–1349"
   },
   {
     "id": 4,
-    "title": "Козацька держава",
-    "code": "kozatska_derzhava",
+    "title": "Руські Удільні Князівства ",
+    "code": "udilni_kniazivstva",
     "image": "/images/kozatska_derzhava.jpg",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "date": "1648–1764"

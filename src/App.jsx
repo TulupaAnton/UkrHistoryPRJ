@@ -12,13 +12,14 @@ import { Abstract } from './Pages/Abstract/Abstract'
 import { KievanRus } from './Pages/KievanRus/KievanRus'
 import { Scroll } from './Components/AutoScroll/Scroll'
 import { GaliciaVolynPower } from './Pages/GaliciaVolynPower/GaliciaVolynPower'
-
+import { UdilniKnaz } from './Pages/UdilniKnaz/UdilniKnaz'
 function DynamicHistoryPage () {
   const { code } = useParams()
   const pageMap = {
     starodavna_ukr: AncientHistoryPage,
     kyivska_rus: KievanRus,
-    galica_volin: GaliciaVolynPower
+    galica_volin: GaliciaVolynPower,
+    udilni_kniazivstva: UdilniKnaz
     // другие страницы
   }
 

@@ -9,6 +9,7 @@ export function Galica_Test () {
   const [timeElapsed, setTimeElapsed] = useState(0)
   const [timerActive, setTimerActive] = useState(false)
   const [sequenceOrder, setSequenceOrder] = useState([])
+  const [matchingAnswers, setMatchingAnswers] = useState({})
 
   // Таймер
   useEffect(() => {
@@ -36,11 +37,28 @@ export function Galica_Test () {
     setTimerActive(true)
     setTimeElapsed(0)
     setSequenceOrder([])
+    setMatchingAnswers({})
+  }
+
+  // Проверка на наличие вопросов
+  if (!questions || questions.length === 0) {
+    return (
+      <div className='min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-gray-100 py-8 px-4 flex items-center justify-center'>
+        <p className='text-xl'>Вопросы не найдены</p>
+      </div>
+    )
   }
 
   const currentQuestion = questions[currentIndex]
 
-  if (!currentQuestion) return <p>Вопросы не найдены</p>
+  // Проверка на существование текущего вопроса
+  if (!currentQuestion) {
+    return (
+      <div className='min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-gray-100 py-8 px-4 flex items-center justify-center'>
+        <p className='text-xl'>Вопрос не найден</p>
+      </div>
+    )
+  }
 
   // Функция для выделения ключевых частей в тексте вопроса
   const formatQuestionText = text => {
@@ -74,9 +92,10 @@ export function Galica_Test () {
     return formattedText
   }
 
-  // Функция для проверки sequence ответов (ИСПРАВЛЕНА)
+  // Функция для проверки sequence ответов
   const handleSequenceAnswer = () => {
-    // Правильное сравнение массивов с учетом порядка
+    if (!currentQuestion) return
+
     const isCorrect =
       sequenceOrder.length === currentQuestion.answer.length &&
       sequenceOrder.every(
@@ -84,10 +103,6 @@ export function Galica_Test () {
           value.trim().toUpperCase() ===
           currentQuestion.answer[index].trim().toUpperCase()
       )
-
-    console.log('User sequence:', sequenceOrder)
-    console.log('Correct sequence:', currentQuestion.answer)
-    console.log('Is correct:', isCorrect)
 
     setAnswersRecord([
       ...answersRecord,
@@ -99,7 +114,7 @@ export function Galica_Test () {
         answers: currentQuestion.answers,
         correctSequence: currentQuestion.answer,
         type: 'sequence',
-        userSequence: [...sequenceOrder] // сохраняем для отладки
+        userSequence: [...sequenceOrder]
       }
     ])
 
@@ -112,7 +127,57 @@ export function Galica_Test () {
     }
   }
 
+  // Функция для проверки matching ответов
+  const handleMatchingAnswer = () => {
+    if (!currentQuestion) return
+
+    // Проверяем, все ли соответствия установлены
+    const allMatched = currentQuestion.leftColumn.every(
+      item => matchingAnswers[item.label]
+    )
+
+    if (!allMatched) {
+      alert('Будь ласка, встановіть всі відповідності')
+      return
+    }
+
+    // Проверяем правильность ответов
+    const isCorrect = Object.entries(matchingAnswers).every(
+      ([leftLabel, rightLabel]) =>
+        currentQuestion.answer[leftLabel] === rightLabel
+    )
+
+    setAnswersRecord([
+      ...answersRecord,
+      {
+        question: currentQuestion.question,
+        quets: currentQuestion.quets,
+        selected: Object.entries(matchingAnswers)
+          .map(([left, right]) => `${left} → ${right}`)
+          .join('; '),
+        correct: isCorrect,
+        answers: {
+          leftColumn: currentQuestion.leftColumn,
+          rightColumn: currentQuestion.rightColumn
+        },
+        correctMatches: currentQuestion.answer,
+        type: 'matching',
+        userMatches: { ...matchingAnswers }
+      }
+    ])
+
+    if (currentIndex < questions.length - 1) {
+      setCurrentIndex(currentIndex + 1)
+      setMatchingAnswers({})
+    } else {
+      setTimerActive(false)
+      setShowResults(true)
+    }
+  }
+
   const handleAnswer = selectedAnswer => {
+    if (!currentQuestion) return
+
     setAnswersRecord([
       ...answersRecord,
       {
@@ -128,6 +193,7 @@ export function Galica_Test () {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(currentIndex + 1)
       setSequenceOrder([])
+      setMatchingAnswers({})
     } else {
       setTimerActive(false)
       setShowResults(true)
@@ -162,6 +228,22 @@ export function Galica_Test () {
     setSequenceOrder(newOrder)
   }
 
+  // Функции для управления matching вопросами
+  const handleMatchingSelect = (leftLabel, rightLabel) => {
+    setMatchingAnswers(prev => ({
+      ...prev,
+      [leftLabel]: rightLabel
+    }))
+  }
+
+  const clearMatchingAnswer = leftLabel => {
+    setMatchingAnswers(prev => {
+      const newAnswers = { ...prev }
+      delete newAnswers[leftLabel]
+      return newAnswers
+    })
+  }
+
   const resetTest = () => {
     setCurrentIndex(0)
     setAnswersRecord([])
@@ -170,6 +252,7 @@ export function Galica_Test () {
     setTimeElapsed(0)
     setTimerActive(false)
     setSequenceOrder([])
+    setMatchingAnswers({})
   }
 
   // Финальные результаты
@@ -286,27 +369,37 @@ export function Galica_Test () {
                               </p>
                             )}
                           </div>
-                          <div className='bg-slate-900/30 rounded-lg p-3'>
-                            <p className='text-sm text-slate-300'>
-                              Елементи послідовності:
+                        </div>
+                      ) : a.type === 'matching' ? (
+                        <div className='space-y-3'>
+                          <div>
+                            <p
+                              className={`text-sm ${
+                                a.correct ? 'text-green-300' : 'text-red-300'
+                              }`}
+                            >
+                              <span className='font-semibold'>
+                                Ваші відповіді:
+                              </span>{' '}
+                              {a.selected}
                             </p>
-                            <div className='mt-2 space-y-2'>
-                              {a.answers.map((item, idx) => (
-                                <div
-                                  key={idx}
-                                  className='flex items-center gap-2 text-sm'
-                                >
-                                  <span className='bg-blue-500/20 px-2 py-1 rounded font-mono'>
-                                    {item.label}
-                                  </span>
-                                  <span className='text-slate-200'>
-                                    {item.text}
-                                  </span>
+                            {!a.correct && (
+                              <div className='text-sm text-green-300 mt-2'>
+                                <span className='font-semibold'>
+                                  Правильні відповіді:
+                                </span>
+                                <div className='mt-1'>
+                                  {Object.entries(a.correctMatches).map(
+                                    ([left, right]) => (
+                                      <div key={left}>
+                                        {left} → {right}
+                                      </div>
+                                    )
+                                  )}
                                 </div>
-                              ))}
-                            </div>
+                              </div>
+                            )}
                           </div>
-                          {/* Отладочная информация */}
                         </div>
                       ) : (
                         <div className='space-y-2'>
@@ -320,12 +413,13 @@ export function Galica_Test () {
                             </span>{' '}
                             {a.selected}
                           </p>
-                          {!a.correct && (
+                          {!a.correct && a.answers && (
                             <p className='text-sm text-green-300'>
                               <span className='font-semibold'>
                                 Правильна відповідь:
                               </span>{' '}
-                              {a.answers.find(ans => ans.correct).text}
+                              {a.answers.find(ans => ans.correct)?.text ||
+                                'Не найдено'}
                             </p>
                           )}
                         </div>
@@ -373,14 +467,6 @@ export function Galica_Test () {
               <p className='text-purple-200'>
                 Кількість питань:{' '}
                 <span className='font-bold text-white'>{questions.length}</span>
-              </p>
-              <p className='text-purple-200'>
-                Час проходження:{' '}
-                <span className='font-bold text-white'>обмежений</span>
-              </p>
-              <p className='text-purple-200'>
-                Складність:{' '}
-                <span className='font-bold text-white'>середня</span>
               </p>
             </div>
           </div>
@@ -520,7 +606,7 @@ export function Galica_Test () {
                             </span>
                           </div>
                           <span className='text-white text-sm flex-1'>
-                            {item.text}
+                            {item?.text || 'Элемент не найден'}
                           </span>
                           <div className='flex gap-1'>
                             <button
@@ -567,17 +653,120 @@ export function Galica_Test () {
                 </button>
               </div>
             </div>
+          ) : currentQuestion.type === 'matching' ? (
+            <div className='space-y-6'>
+              <div className='bg-slate-900/30 rounded-xl p-4'>
+                <h3 className='text-lg font-semibold text-white mb-4 text-center'>
+                  Встановіть відповідності:
+                </h3>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                  {/* Левый столбец - города */}
+                  <div className='space-y-3'>
+                    <h4 className='text-blue-300 font-semibold text-center mb-3'>
+                      Міста
+                    </h4>
+                    {currentQuestion.leftColumn.map((item, index) => (
+                      <div
+                        key={index}
+                        className='flex items-center gap-3 p-3 bg-blue-900/20 rounded-lg border border-blue-500/30'
+                      >
+                        <span className='bg-blue-500 text-white px-3 py-1 rounded font-mono font-bold'>
+                          {item.label}
+                        </span>
+                        <span className='text-white text-sm flex-1'>
+                          {item.text}
+                        </span>
+                        <div className='flex items-center gap-2'>
+                          {matchingAnswers[item.label] && (
+                            <span className='bg-green-500 text-white px-2 py-1 rounded text-sm'>
+                              {matchingAnswers[item.label]}
+                            </span>
+                          )}
+                          <button
+                            onClick={() => clearMatchingAnswer(item.label)}
+                            className='p-1 rounded hover:bg-red-500/20 text-red-400'
+                            disabled={!matchingAnswers[item.label]}
+                          >
+                            ×
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Правый столбец - события */}
+                  <div className='space-y-3'>
+                    <h4 className='text-green-300 font-semibold text-center mb-3'>
+                      Події
+                    </h4>
+                    {currentQuestion.rightColumn.map((item, index) => (
+                      <button
+                        key={index}
+                        onClick={() => {
+                          // Находим первый несопоставленный элемент из левого столбца
+                          const unmatchedLeft = currentQuestion.leftColumn.find(
+                            leftItem => !matchingAnswers[leftItem.label]
+                          )
+                          if (unmatchedLeft) {
+                            handleMatchingSelect(
+                              unmatchedLeft.label,
+                              item.label
+                            )
+                          }
+                        }}
+                        disabled={Object.values(matchingAnswers).includes(
+                          item.label
+                        )}
+                        className={`w-full p-3 rounded-lg border-2 text-left transition-all ${
+                          Object.values(matchingAnswers).includes(item.label)
+                            ? 'border-green-500/50 bg-green-500/20 cursor-not-allowed'
+                            : 'border-green-500/30 bg-green-500/10 hover:border-green-400/50 hover:bg-green-500/20'
+                        }`}
+                      >
+                        <div className='flex items-start gap-3'>
+                          <span className='bg-green-500 text-white px-2 py-1 rounded text-sm font-mono shrink-0'>
+                            {item.label}
+                          </span>
+                          <span className='text-white text-sm'>
+                            {item.text}
+                          </span>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className='text-center'>
+                <button
+                  onClick={handleMatchingAnswer}
+                  disabled={
+                    Object.keys(matchingAnswers).length !==
+                    currentQuestion.leftColumn.length
+                  }
+                  className='bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 disabled:from-slate-600 disabled:to-slate-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 disabled:scale-100 disabled:cursor-not-allowed'
+                >
+                  {Object.keys(matchingAnswers).length ===
+                  currentQuestion.leftColumn.length
+                    ? 'Підтвердити відповіді'
+                    : `Встановіть всі відповідності (${
+                        Object.keys(matchingAnswers).length
+                      }/${currentQuestion.leftColumn.length})`}
+                </button>
+              </div>
+            </div>
           ) : (
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-              {currentQuestion.answers.map((a, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleAnswer(a)}
-                  className='bg-gradient-to-r from-blue-900/50 to-slate-800/50 hover:from-blue-800/60 hover:to-slate-700/60 border-2 border-blue-500/30 hover:border-blue-400/50 text-white text-lg font-medium p-4 rounded-xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm text-left'
-                >
-                  {a.text}
-                </button>
-              ))}
+              {currentQuestion.answers &&
+                currentQuestion.answers.map((a, index) => (
+                  <button
+                    key={index}
+                    onClick={() => handleAnswer(a)}
+                    className='bg-gradient-to-r from-blue-900/50 to-slate-800/50 hover:from-blue-800/60 hover:to-slate-700/60 border-2 border-blue-500/30 hover:border-blue-400/50 text-white text-lg font-medium p-4 rounded-xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm text-left'
+                  >
+                    {a.text}
+                  </button>
+                ))}
             </div>
           )}
         </div>
