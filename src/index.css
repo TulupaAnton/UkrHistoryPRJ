@@ -8,6 +8,9 @@
   --font-six: 'Comfortaa';
   --font-seven: '"Dela Gothic One"';
 }
+body {
+  font-family: Comfortaa;
+}
 /* Для всех браузеров */
 /* Глобальные стили скроллбара для всего сайта */
 * {

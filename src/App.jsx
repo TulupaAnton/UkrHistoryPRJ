@@ -2,7 +2,6 @@ import './App.css'
 
 import { Header } from './Components/Header/Header'
 import { Routes, Route, useParams } from 'react-router-dom'
-import { Tests } from './Pages/Testtt/Tests'
 import { About } from './Pages/About/About'
 import { Main } from './Pages/MainPage/Main'
 import { Footer } from './Components/Footer/Footer'
@@ -41,7 +40,6 @@ export default function App () {
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/abstracts' element={<Abstract />} />
-        <Route path='/tests' element={<Tests />} />
         <Route path='/about' element={<About />} />
         <Route path='/abstract/:code' element={<DynamicHistoryPage />} />
       </Routes>
