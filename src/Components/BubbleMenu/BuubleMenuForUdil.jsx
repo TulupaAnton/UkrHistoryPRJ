@@ -105,7 +105,7 @@ export function BubbleMenuforUdil () {
           ) : (
             <div className='flex flex-col items-center justify-center'>
               <FaCrown className='text-white text-lg' />
-              <span className='text-[8px] text-white/80 mt-0.5'>Меню</span>
+              <span className='text-[8px] text-white/80 mt-0.5'>Теми</span>
             </div>
           )}
         </button>
@@ -202,7 +202,7 @@ export function BubbleMenuforUdil () {
         ) : (
           <div className='flex flex-col items-center justify-center'>
             <FaCrown className='text-white text-lg' />
-            <span className='text-[8px] text-white/80 mt-0.5'>Меню</span>
+            <span className='text-[8px] text-white/80 mt-0.5'>Теми</span>
           </div>
         )}
       </button>

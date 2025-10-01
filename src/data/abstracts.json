@@ -19,24 +19,21 @@
     "title": "Галицько-Волинське князівство",
     "code": "galica_volin",
     "image": "/assets/Galica.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "date": "1199–1349"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     "id": 4,
     "title": "Руські Удільні Князівства ",
     "code": "udilni_kniazivstva",
     "image": "/assets/galica.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "date": "1648–1764"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     "id": 5,
-    "title": "Україна у складі Російської імперії",
-    "code": "ukr_ros_empire",
+    "title": "Українські землі у складі Речі Посполитої",
+    "code": "rich_pospolita",
     "image": "/images/ukr_ros_empire.jpg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "date": "1793–1917"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     "id": 6,
