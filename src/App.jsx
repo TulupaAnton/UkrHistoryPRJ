@@ -13,6 +13,7 @@ import { Scroll } from './Components/AutoScroll/Scroll'
 import { GaliciaVolynPower } from './Pages/GaliciaVolynPower/GaliciaVolynPower'
 import { UdilniKnaz } from './Pages/UdilniKnaz/UdilniKnaz'
 import { RichP } from './Pages/RP/RichP'
+import { KozakGer } from './Pages/KozakGer/KozakGer'
 function DynamicHistoryPage () {
   const { code } = useParams()
   const pageMap = {
@@ -20,8 +21,8 @@ function DynamicHistoryPage () {
     kyivska_rus: KievanRus,
     galica_volin: GaliciaVolynPower,
     udilni_kniazivstva: UdilniKnaz,
-    rich_pospolita: RichP
-    // другие страницы
+    rich_pospolita: RichP,
+    kozaki_ger: KozakGer
   }
 
   const PageComponent = pageMap[code]
