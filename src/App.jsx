@@ -14,6 +14,7 @@ import { GaliciaVolynPower } from './Pages/GaliciaVolynPower/GaliciaVolynPower'
 import { UdilniKnaz } from './Pages/UdilniKnaz/UdilniKnaz'
 import { RichP } from './Pages/RP/RichP'
 import { KozakGer } from './Pages/KozakGer/KozakGer'
+import { NVV } from './Pages/NVV/NVV'
 function DynamicHistoryPage () {
   const { code } = useParams()
   const pageMap = {
@@ -22,7 +23,8 @@ function DynamicHistoryPage () {
     galica_volin: GaliciaVolynPower,
     udilni_kniazivstva: UdilniKnaz,
     rich_pospolita: RichP,
-    kozaki_ger: KozakGer
+    kozaki_ger: KozakGer,
+    n_vv: NVV
   }
 
   const PageComponent = pageMap[code]

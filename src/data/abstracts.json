@@ -32,24 +32,24 @@
     "id": 5,
     "title": "Українські землі у складі Речі Посполитої",
     "code": "rich_pospolita",
-    "image": "/images/ukr_ros_empire.jpg",
+    "image": "/assets/RP.png",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     "id": 6,
     "title": "Перша половина ХVІІ ст.доба героїчних морських походв козаків ",
     "code": "kozaki_ger",
-    "image": "/images/ukr_revolution_1917.jpg",
+    "image": "/assets/sagaydachniy.png",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "date": "1917–1921"
+    "date": ""
   },
   {
     "id": 7,
-    "title": "Нацонально-визвольна вйна ",
-    "code": "ww2_ukraine",
+    "title": "Національно-визвольна вйна ",
+    "code": "n_vv",
     "image": "/images/ww2_ukraine.jpg",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "date": "1939–1945"
+    "date": ""
   },
   {
     "id": 8,
