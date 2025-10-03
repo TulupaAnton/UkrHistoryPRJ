@@ -1,3 +1,4 @@
+import { Culture } from '../../Components/KozakGer/Culture'
 import { Hotin } from '../../Components/KozakGer/Hotin'
 import { KozakCamp } from '../../Components/KozakGer/KozakCamp'
 import { Rebel } from '../../Components/KozakGer/Rebel'
@@ -17,6 +18,9 @@ export function KozakGer () {
       </div>
       <div>
         <Rebel />
+      </div>
+      <div>
+        <Culture />
       </div>
     </div>
   )

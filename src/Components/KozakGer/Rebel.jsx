@@ -405,7 +405,7 @@ export function Rebel () {
         </div>
         <div className='relative flex justify-center'>
           <span className='bg-gradient-to-r from-slate-800 to-slate-900 px-6 sm:px-8 py-3 sm:py-4 text-xl sm:text-2xl font-semibold text-purple-200 rounded-full border-2 border-purple-600/50 shadow-lg text-center'>
-            Боротьба за козацькі права
+            Культура
           </span>
         </div>
       </div>
