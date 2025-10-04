@@ -50,13 +50,5 @@
     "image": "/images/ww2_ukraine.jpg",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "date": ""
-  },
-  {
-    "id": 8,
-    "title": "Незалежність України",
-    "code": "independence_ukraine",
-    "image": "/images/independence_ukraine.jpg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "date": "1991 – сьогодні"
   }
 ]
