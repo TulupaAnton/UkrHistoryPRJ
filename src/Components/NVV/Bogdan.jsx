@@ -26,7 +26,7 @@ export function Bohdan () {
           <div className='lg:col-span-1 flex justify-center'>
             <div className='p-4 sm:p-6 bg-slate-800/40 rounded-xl border-l-4 border-yellow-400 backdrop-blur-sm'>
               <img
-                src=''
+                src='../../../assets/NVV/Bohdan.jpg'
                 alt='Портрет Богдана Хмельницького'
                 className='w-full max-w-xs sm:max-w-sm rounded-lg shadow-2xl'
               />
@@ -194,9 +194,9 @@ export function Bohdan () {
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8'>
             <div className='p-4 sm:p-6 bg-amber-900/20 rounded-lg text-center'>
               <img
-                src=''
+                src='../../../assets/NVV/charch.jpg'
                 alt='Іллінська церква та дзвіниця'
-                className='w-full h-64 sm:h-80 object-cover rounded-lg mb-4 shadow-lg'
+                className='w-full h-120 sm:h-120 object-cover rounded-lg mb-4 shadow-lg'
               />
               <p className='text-xl sm:text-2xl text-amber-200 font-medium'>
                 Іллінська церква та дзвіниця
@@ -207,9 +207,9 @@ export function Bohdan () {
             </div>
             <div className='p-4 sm:p-6 bg-amber-900/20 rounded-lg text-center'>
               <img
-                src=''
+                src='../../../assets/NVV/Pokrova.jpg'
                 alt='Ікона Покров Богородиці з портретом гетьмана Богдана Хмельницького'
-                className='w-full h-64 sm:h-80 object-cover rounded-lg mb-4 shadow-lg'
+                className='w-full h-120 sm:h-120 object-cover rounded-lg mb-4 shadow-lg'
               />
               <p className='text-xl sm:text-2xl text-amber-200 font-medium'>
                 Ікона «Покров Богородиці»

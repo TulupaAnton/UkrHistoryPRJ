@@ -7,8 +7,8 @@ export function Main () {
     <>
       <div>
         <Info />
-        <CardsInfo />
-        <Test />
+        {/* <CardsInfo />
+        <Test /> */}
       </div>
     </>
   )
