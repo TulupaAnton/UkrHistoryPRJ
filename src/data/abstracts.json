@@ -50,5 +50,11 @@
     "image": "/images/ww2_ukraine.jpg",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "date": ""
+  },
+  {
+    "id": 8,
+    "title": "Руїна. 50- 80-х рр. XVII ст.",
+    "code": "ruina",
+    "image": ""
   }
 ]

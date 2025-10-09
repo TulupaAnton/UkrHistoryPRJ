@@ -339,16 +339,6 @@ export function Moskva () {
           </div>
         </div>
       </div>
-
-      {/* Разделитель внизу */}
-      <div className='relative mt-12 sm:mt-16 py-6 sm:py-8 px-3 sm:px-6 lg:px-8'>
-        <div className='absolute inset-0 flex items-center justify-center'>
-          <div className='w-full border-t-2 border-blue-700/30 border-dashed'></div>
-        </div>
-        <div className='relative flex justify-center'>
-          <span className='bg-gradient-to-r from-slate-800 to-slate-900 px-6 sm:px-8 py-3 sm:py-4 text-xl sm:text-2xl font-semibold text-blue-200 rounded-full border-2 border-blue-600/50 shadow-lg text-center'></span>
-        </div>
-      </div>
     </div>
   )
 }
