@@ -29,7 +29,7 @@ export function Ivan () {
           <div className='lg:col-span-1 flex justify-center'>
             <div className='p-4 sm:p-6 bg-slate-800/40 rounded-xl border-l-4 border-blue-400 backdrop-blur-sm'>
               <img
-                src=''
+                src='../../../assets/Ruina/Ivan.jpg'
                 alt='Іван Виговський'
                 className='w-full max-w-xs sm:max-w-sm rounded-lg shadow-2xl'
               />
@@ -163,9 +163,9 @@ export function Ivan () {
           <div className='flex justify-center'>
             <div className='p-4 sm:p-6 bg-blue-900/20 rounded-lg border-l-2 border-blue-400 w-full max-w-4xl'>
               <img
-                src=''
+                src='../../../assets/Ruina/image.png'
                 alt='Мапа за Гадяцьким договором 1658 року'
-                className='w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-2xl bg-blue-700'
+                className='w-full h-220 sm:h-80 lg:h-220 object-cover rounded-lg shadow-2xl bg-blue-700'
               />
               <p className='text-xl sm:text-2xl text-blue-200 text-center mt-4 font-medium'>
                 Територія Великого князівства Руського за Гадяцьким договором

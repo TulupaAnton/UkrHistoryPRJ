@@ -16,6 +16,7 @@ import { RichP } from './Pages/RP/RichP'
 import { KozakGer } from './Pages/KozakGer/KozakGer'
 import { NVV } from './Pages/NVV/NVV'
 import { Ruina } from './Pages/Ruina/Ruina'
+
 function DynamicHistoryPage () {
   const { code } = useParams()
   const pageMap = {
