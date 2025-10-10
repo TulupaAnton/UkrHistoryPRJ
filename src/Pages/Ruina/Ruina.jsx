@@ -1,4 +1,6 @@
+import { Chigirin } from '../../Components/Ruina/Chigirin'
 import { Doroshenko } from '../../Components/Ruina/Doroshenko'
+import { EnternalPeace } from '../../Components/Ruina/EnternalPeace'
 import { Ivan } from '../../Components/Ruina/Ivan'
 import { Konotop } from '../../Components/Ruina/Konotop'
 import { Mnogogrish } from '../../Components/Ruina/Mnogogrish'
@@ -33,6 +35,12 @@ export function Ruina () {
       </div>
       <div>
         <Samoylovich />
+      </div>
+      <div>
+        <Chigirin />
+      </div>
+      <div>
+        <EnternalPeace />
       </div>
     </div>
   )

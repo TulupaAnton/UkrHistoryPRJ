@@ -15,7 +15,7 @@ export function Samoylovich () {
             <div className='relative group mb-8'>
               <div className='w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 mx-auto mb-4 relative'>
                 <img
-                  src='../../../assets/Samo.webp'
+                  src='../../../assets/Ruina/Samoylovich.webp'
                   alt='Портрет Івана Самойловича'
                   className='w-full h-full object-cover rounded-2xl border-4 border-indigo-500/50 shadow-2xl shadow-indigo-500/20 transition-all duration-300 group-hover:scale-105 group-hover:border-indigo-400/70 group-hover:shadow-indigo-400/30'
                 />
@@ -192,7 +192,7 @@ export function Samoylovich () {
         </div>
         <div className='relative flex justify-center'>
           <span className='bg-gradient-to-r from-slate-800 to-slate-900 px-6 sm:px-8 py-3 sm:py-4 text-xl sm:text-2xl font-semibold text-indigo-200 rounded-full border-2 border-indigo-600/50 shadow-lg text-center'>
-            Кінець періоду Руїни
+            Чигиринські походи
           </span>
         </div>
       </div>

@@ -15,7 +15,7 @@ export function Mnogogrish () {
             <div className='relative group mb-8'>
               <div className='w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 mx-auto mb-4 relative'>
                 <img
-                  src='../../../assets/Mnogo.webp'
+                  src='../../../assets/Ruina/mnogogrish.webp'
                   alt='Портрет Демьяна Многогрішного'
                   className='w-full h-full object-cover rounded-2xl border-4 border-green-500/50 shadow-2xl shadow-green-500/20 transition-all duration-300 group-hover:scale-105 group-hover:border-green-400/70 group-hover:shadow-green-400/30'
                 />
