@@ -72,10 +72,10 @@ export function Header () {
         <nav className='bg-gray-800 bg-opacity-95 shadow-inner py-4 px-6 border-t border-amber-700 border-opacity-30'>
           <div className='flex flex-col space-y-3'>
             {[
-              { path: '/', label: 'Головна' },
-              { path: '/Abstarcts', label: 'Конспекти' },
-              { path: '/Tests', label: 'Тести' },
-              { path: '/About', label: 'Про проєкт' }
+              { path: '/', label: 'Головна' }
+              // { path: '/Abstarcts', label: 'Конспекти' },
+              // { path: '/Tests', label: 'Тести' },
+              // { path: '/About', label: 'Про проєкт' }
             ].map((item, index) => (
               <Link
                 key={item.path}

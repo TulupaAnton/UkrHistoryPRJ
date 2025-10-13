@@ -45,7 +45,7 @@
   },
   {
     "id": 7,
-    "title": "Національно-визвольна вйна ",
+    "title": "Національно-визвольна війна ",
     "code": "n_vv",
     "image": "/images/ww2_ukraine.jpg",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -55,6 +55,12 @@
     "id": 8,
     "title": "Руїна. 50- 80-х рр. XVII ст.",
     "code": "ruina",
+    "image": ""
+  },
+  {
+    "id": 9,
+    "title": "Українські землі наприкінці ХVІІ –у першій половині ХVІІІ ст.",
+    "code": "mazepa",
     "image": ""
   }
 ]
