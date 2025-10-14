@@ -5,7 +5,7 @@ export function Header () {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className='fixed top-0 left-0 right-0 z-50 bg-gradient-to-br from-gray-900 to-gray-800 py-4 shadow-lg'>
+    <header className=' top-0 left-0 right-0 z-50 bg-gradient-to-br from-gray-900 to-gray-800 py-4 shadow-lg'>
       <div className='container mx-auto px-4 flex justify-between items-center'>
         {/* Логотип */}
         <div className='ml-2 md:ml-8 lg:ml-12'>

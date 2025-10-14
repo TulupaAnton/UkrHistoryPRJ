@@ -19,7 +19,7 @@ export function Abstract () {
   })
 
   return (
-    <div className='min-h-screen bg-gradient-to-br mt-15 from-gray-900 to-gray-800 text-gray-200 w-full'>
+    <div className='min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-gray-200 w-full'>
       <div className='w-full px-4 py-8 flex flex-col lg:flex-row min-h-screen'>
         {/* Sidebar */}
         <aside className='w-full lg:w-80 bg-gray-800 p-6 flex flex-col'>

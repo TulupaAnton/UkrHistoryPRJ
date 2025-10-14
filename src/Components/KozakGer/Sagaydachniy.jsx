@@ -1,6 +1,6 @@
 export function Sagaydachniy () {
   return (
-    <div className='min-h-screen bg-gradient-to-b mt-15 from-slate-900 via-slate-800 to-slate-900 text-gray-100 py-4 sm:py-8 px-3 sm:px-6 lg:px-8 relative overflow-hidden'>
+    <div className='min-h-screen bg-gradient-to-b  from-slate-900 via-slate-800 to-slate-900 text-gray-100 py-4 sm:py-8 px-3 sm:px-6 lg:px-8 relative overflow-hidden'>
       {/* Декоративные элементы фона */}
       <div className='absolute top-0 left-0 w-full h-full opacity-5'>
         <div className='absolute top-10% left-5% w-72 h-72 bg-amber-600 rounded-full blur-3xl'></div>
