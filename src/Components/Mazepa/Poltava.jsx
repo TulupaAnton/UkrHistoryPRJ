@@ -172,7 +172,7 @@ export function Poltava () {
         </div>
         <div className='relative flex justify-center'>
           <span className='bg-gradient-to-r from-slate-800 to-slate-900 px-6 sm:px-8 py-3 sm:py-4 text-xl sm:text-2xl font-bold text-red-200 rounded-xl border-2 border-red-600/50 shadow-lg text-center backdrop-blur-sm'>
-            Переломний момент в історії України
+            Гетьманування Пилипа Орлика
           </span>
         </div>
       </footer>
