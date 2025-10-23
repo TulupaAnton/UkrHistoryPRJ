@@ -17,6 +17,7 @@ import { KozakGer } from './Pages/KozakGer/KozakGer'
 import { NVV } from './Pages/NVV/NVV'
 import { Ruina } from './Pages/Ruina/Ruina'
 import { Mazepa } from './Pages/Mazepa/Mazepa'
+import { Maloros } from './Pages/Maloros/Maloros'
 
 function DynamicHistoryPage () {
   const { code } = useParams()
@@ -29,7 +30,8 @@ function DynamicHistoryPage () {
     kozaki_ger: KozakGer,
     n_vv: NVV,
     ruina: Ruina,
-    mazepa: Mazepa
+    mazepa: Mazepa,
+    rozum: Maloros
   }
 
   const PageComponent = pageMap[code]
