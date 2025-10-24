@@ -13,27 +13,23 @@ export function Rozum () {
 
       {/* Header Section */}
       <header className='relative z-10 pt-16 pb-12 px-4 sm:px-6 lg:px-8'>
-        <div className='max-w-4xl mx-auto text-center'>
+        <div className='max-w-6xl mx-auto text-center'>
           {/* Decorative elements */}
           <div className='absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full'></div>
 
-          <h1 className='text-5xl sm:text-6xl lg:text-7xl font-black mb-6 tracking-tight'>
+          <h1 className='text-4xl sm:text-5xl lg:text-6xl font-black mb-6 tracking-tight'>
             <span className='bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400'>
-              Кирило Розумовський
+              Українські землі в другій половині ХVІІІ ст
             </span>
           </h1>
 
           <div className='inline-flex items-center justify-center space-x-4 mb-6'>
             <div className='w-16 h-0.5 bg-gradient-to-r from-transparent to-cyan-400'></div>
-            <span className='text-cyan-200 text-xl font-semibold tracking-wider'>
-              1750 - 1764
+            <span className='text-cyan-200 text-2xl sm:text-3xl font-semibold tracking-wider'>
+              Гетьманування Кирила Розумовського (1750-1764)
             </span>
             <div className='w-16 h-0.5 bg-gradient-to-r from-cyan-400 to-transparent'></div>
           </div>
-
-          <p className='text-2xl sm:text-3xl text-cyan-100 font-light max-w-3xl mx-auto leading-tight'>
-            Останній гетьман Війська Запорізького
-          </p>
         </div>
       </header>
 
@@ -48,12 +44,12 @@ export function Rozum () {
                 <div className='absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 mix-blend-overlay'></div>
                 <img
                   src='../../../assets/Rozum.png'
-                  alt='Портрет гетьмана Кирила Розумовського'
+                  alt='Гетьман Кирило Розумовський'
                   className='w-full h-auto object-cover'
                 />
               </div>
               <div className='absolute inset-0 rounded-2xl border-2 border-cyan-400/30 pointer-events-none'></div>
-              <figcaption className='text-center text-cyan-200/80 mt-4 text-sm font-light'>
+              <figcaption className='text-center text-cyan-200/80 mt-4 text-lg font-light'>
                 Гетьман Кирило Розумовський
               </figcaption>
             </figure>
@@ -61,43 +57,31 @@ export function Rozum () {
 
           {/* Key Facts Column */}
           <div className='lg:col-span-2'>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-              <div className='bg-slate-800/40 backdrop-blur-sm rounded-xl p-6 border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-300'>
-                <h3 className='text-cyan-300 font-bold text-lg mb-3'>
-                  📜 Статус
-                </h3>
-                <p className='text-white/90'>
-                  Останній гетьман Війська Запорізького, граф Російської імперії
-                </p>
-              </div>
+            <div className='bg-slate-800/40 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-cyan-500/20'>
+              <p className='text-xl sm:text-2xl leading-relaxed text-white/90 mb-6'>
+                Український військовий, політичний і державний діяч: останній
+                гетьман Війська Запорізького: представник козацького роду
+                Розумовських: граф Російської імперії,{' '}
+                <span className='bg-yellow-500/20 text-yellow-200 px-2 py-1 rounded-lg font-semibold'>
+                  генерал-фельдмаршал: намагався перебудувати Гетьманщину на
+                  європейський лад
+                </span>
+              </p>
+              <p className='text-xl sm:text-2xl leading-relaxed text-white/90'>
+                <span className='bg-red-500/20 text-red-200 px-3 py-1 rounded-lg font-bold text-2xl'>
+                  1764 рік
+                </span>{' '}
+                - Катерина II примусила К. Розумовського зректися гетьманства,
+                за що йому зберегли становище високого достойника Російської
+                імперії, забезпечили велику пенсію й надали у власність колишні
+                гетьманські столиці, зокрема Батурин
+              </p>
+            </div>
 
-              <div className='bg-slate-800/40 backdrop-blur-sm rounded-xl p-6 border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300'>
-                <h3 className='text-blue-300 font-bold text-lg mb-3'>
-                  ⚔️ Звання
-                </h3>
-                <p className='text-white/90'>
-                  Генерал-фельдмаршал Російської імперії
-                </p>
-              </div>
-
-              <div className='bg-slate-800/40 backdrop-blur-sm rounded-xl p-6 border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300'>
-                <h3 className='text-purple-300 font-bold text-lg mb-3'>
-                  🎯 Мета
-                </h3>
-                <p className='text-white/90'>
-                  Перебудова Гетьманщини на європейський лад
-                </p>
-              </div>
-
-              <div className='bg-slate-800/40 backdrop-blur-sm rounded-xl p-6 border border-red-500/20 hover:border-red-400/40 transition-all duration-300'>
-                <h3 className='text-red-300 font-bold text-lg mb-3'>
-                  ⏰ Завершення
-                </h3>
-                <p className='text-white/90'>
-                  <time className='font-bold'>1764 р.</time> - зрікся
-                  гетьманства
-                </p>
-              </div>
+            <div className='mt-6 text-center'>
+              <span className='inline-block bg-green-500/20 text-green-200 text-2xl sm:text-3xl font-bold px-6 py-3 rounded-2xl border border-green-400/30'>
+                Зміцнення автономії
+              </span>
             </div>
           </div>
         </section>
@@ -105,222 +89,207 @@ export function Rozum () {
         {/* Historical Context */}
         <section className='space-y-8'>
           {/* Передумови */}
-          <article className='bg-gradient-to-r from-slate-800/50 to-blue-900/30 rounded-2xl p-8 border border-cyan-500/30 backdrop-blur-sm'>
-            <h2 className='text-3xl font-bold text-cyan-300 mb-6 flex items-center'>
-              <span className='w-3 h-3 bg-cyan-400 rounded-full mr-3'></span>
-              Історичний контекст
+          <article className='bg-gradient-to-r from-slate-800/50 to-blue-900/30 rounded-2xl p-6 sm:p-8 border border-cyan-500/30 backdrop-blur-sm'>
+            <h2 className='text-3xl sm:text-4xl font-bold text-cyan-300 mb-6 flex items-center'>
+              <span className='w-4 h-4 bg-cyan-400 rounded-full mr-4'></span>
+              Передумови
             </h2>
-            <div className='space-y-4 text-lg leading-relaxed'>
+            <div className='space-y-6 text-xl sm:text-2xl leading-relaxed'>
               <p>
-                У <time className='text-cyan-300 font-semibold'>1741 р.</time>{' '}
-                до влади прийшла імператриця{' '}
-                <strong className='text-yellow-300'>Єлизавета Петрівна</strong>.
-                Її чоловіком був українець{' '}
-                <strong className='text-yellow-300'>
-                  Олексій Розумовський
-                </strong>
-                , що сприяло поширенню української культури при дворі.
+                1741 р. до влади прийшла імператриця Єлизавета, дочка Петра І її
+                чоловіком був українець Олексій Розумовський, а при дворі
+                поширилася мода на українську культуру
+              </p>
+              <p>
+                1744 р. козацька старшина за сприяння О. Розумовського
+                звернулася до Єлизавети з проханням відновити гетьманство.
+                Кандидатурою на посаду гетьмана став молодший брат чоловіка
+                Єлизавети Кирило Розумовський
               </p>
             </div>
           </article>
 
-          {/* Причини відновлення гетьманства */}
-          <article className='bg-gradient-to-r from-slate-800/50 to-purple-900/30 rounded-2xl p-8 border border-purple-500/30 backdrop-blur-sm'>
-            <h2 className='text-3xl font-bold text-purple-300 mb-6 flex items-center'>
-              <span className='w-3 h-3 bg-purple-400 rounded-full mr-3'></span>
-              Причини відновлення гетьманства
+          {/* Причини */}
+          <article className='bg-gradient-to-r from-slate-800/50 to-purple-900/30 rounded-2xl p-6 sm:p-8 border border-purple-500/30 backdrop-blur-sm'>
+            <h2 className='text-3xl sm:text-4xl font-bold text-purple-300 mb-6 flex items-center'>
+              <span className='w-4 h-4 bg-purple-400 rounded-full mr-4'></span>
+              Причини
             </h2>
-            <ul className='grid grid-cols-1 md:grid-cols-2 gap-4 text-lg'>
-              <li className='flex items-start space-x-3'>
-                <div
-                  className='w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0'
-                  aria-hidden='true'
-                ></div>
-                <span>
-                  Позиція козацької старшини щодо відновлення гетьманства
-                </span>
-              </li>
-              <li className='flex items-start space-x-3'>
-                <div
-                  className='w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0'
-                  aria-hidden='true'
-                ></div>
-                <span>Економічне невдоволення українського населення</span>
-              </li>
-              <li className='flex items-start space-x-3'>
-                <div
-                  className='w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0'
-                  aria-hidden='true'
-                ></div>
-                <span>
-                  Загроза війни з Пруссією та потреба у військовому потенціалі
-                </span>
-              </li>
-              <li className='flex items-start space-x-3'>
-                <div
-                  className='w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0'
-                  aria-hidden='true'
-                ></div>
-                <span>Стратегічні інтереси у війнах проти Туреччини</span>
-              </li>
-            </ul>
-          </article>
-
-          {/* Реформи та досягнення */}
-          <article className='bg-gradient-to-r from-slate-800/50 to-blue-900/30 rounded-2xl p-8 border border-blue-500/30 backdrop-blur-sm'>
-            <h2 className='text-3xl font-bold text-blue-300 mb-6 flex items-center'>
-              <span className='w-3 h-3 bg-blue-400 rounded-full mr-3'></span>
-              Реформи та політика
-            </h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 text-xl sm:text-2xl'>
               <div className='space-y-4'>
-                <h3 className='text-xl font-semibold text-cyan-200 mb-3'>
-                  🏛️ Адміністративні зміни
-                </h3>
-                <ul className='space-y-2'>
-                  <li className='flex items-center space-x-2'>
-                    <span className='text-cyan-400'>•</span>
-                    <span>
-                      Повернення резиденції до{' '}
-                      <mark className='bg-cyan-500/30 text-cyan-200 px-1 rounded'>
-                        Батурина
-                      </mark>
-                    </span>
-                  </li>
-                  <li className='flex items-center space-x-2'>
-                    <span className='text-cyan-400'>•</span>
-                    <span>
-                      Підпорядкування{' '}
-                      <mark className='bg-cyan-500/30 text-cyan-200 px-1 rounded'>
-                        Запорізької Січі
-                      </mark>
-                    </span>
-                  </li>
-                  <li className='flex items-center space-x-2'>
-                    <span className='text-cyan-400'>•</span>
-                    <span>
-                      Контроль над{' '}
-                      <mark className='bg-cyan-500/30 text-cyan-200 px-1 rounded'>
-                        Києвом
-                      </mark>
-                    </span>
-                  </li>
-                </ul>
+                <p className='flex items-start space-x-3'>
+                  <span className='text-purple-400 mt-2'>•</span>
+                  <span>
+                    Позиція старшини, яка домагалася відновлення гетьманства
+                  </span>
+                </p>
+                <p className='flex items-start space-x-3'>
+                  <span className='text-purple-400 mt-2'>•</span>
+                  <span>
+                    Наростання невдоволення українців економічним становищем
+                  </span>
+                </p>
               </div>
               <div className='space-y-4'>
-                <h3 className='text-xl font-semibold text-green-200 mb-3'>
-                  📚 Освіта та судочинство
-                </h3>
-                <ul className='space-y-2'>
-                  <li className='flex items-center space-x-2'>
-                    <span className='text-green-400'>•</span>
-                    <span>Створення шляхетських судів</span>
-                  </li>
-                  <li className='flex items-center space-x-2'>
-                    <span className='text-green-400'>•</span>
-                    <span>Обов'язкове навчання козацьких дітей</span>
-                  </li>
-                  <li className='flex items-center space-x-2'>
-                    <span className='text-green-400'>•</span>
-                    <span>Проєкт спадкового гетьманства</span>
-                  </li>
-                </ul>
+                <p className='flex items-start space-x-3'>
+                  <span className='text-purple-400 mt-2'>•</span>
+                  <span>
+                    Загроза війни проти Пруссії та ймовірним використанням
+                    військового потенціалу Гетьманщини
+                  </span>
+                </p>
+                <p className='flex items-start space-x-3'>
+                  <span className='text-purple-400 mt-2'>•</span>
+                  <span>
+                    Потреба відновити стратегічний потенціал України з метою
+                    використання його у війнах проти Туреччини
+                  </span>
+                </p>
               </div>
             </div>
           </article>
 
-          {/* Важливі події */}
-          <article className='bg-gradient-to-r from-slate-800/50 to-red-900/30 rounded-2xl p-8 border border-red-500/30 backdrop-blur-sm'>
-            <h2 className='text-3xl font-bold text-red-300 mb-6 flex items-center'>
-              <span className='w-3 h-3 bg-red-400 rounded-full mr-3'></span>
-              Ключові події
+          {/* Політика */}
+          <article className='bg-gradient-to-r from-slate-800/50 to-blue-900/30 rounded-2xl p-6 sm:p-8 border border-blue-500/30 backdrop-blur-sm'>
+            <h2 className='text-3xl sm:text-4xl font-bold text-blue-300 mb-6 flex items-center'>
+              <span className='w-4 h-4 bg-blue-400 rounded-full mr-4'></span>
+              Політика
             </h2>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 text-xl sm:text-2xl'>
+              <div className='space-y-4'>
+                <p>Не укладав жодних статей із царською адміністрацією</p>
+                <p>Українські справи розглядалися Колегією закордонних справ</p>
+                <p>
+                  Повернув резиденцію з{' '}
+                  <span className='bg-cyan-500/30 text-cyan-200 px-2 py-1 rounded'>
+                    Глухова
+                  </span>{' '}
+                  до{' '}
+                  <span className='bg-cyan-500/30 text-cyan-200 px-2 py-1 rounded'>
+                    Батурина
+                  </span>
+                </p>
+                <p>
+                  Підпорядкував своїй адміністрації{' '}
+                  <span className='bg-purple-500/30 text-purple-200 px-2 py-1 rounded'>
+                    Запорізьку Січ
+                  </span>{' '}
+                  і{' '}
+                  <span className='bg-purple-500/30 text-purple-200 px-2 py-1 rounded'>
+                    Київ
+                  </span>
+                </p>
+              </div>
+              <div className='space-y-4'>
+                <p>
+                  Судова реформа, реформа війська{' '}
+                  <span className='bg-amber-500/30 text-amber-200 px-2 py-1 rounded'>
+                    створено станові шляхетські суди
+                  </span>
+                </p>
+                <p>Запровадив обов'язкове навчання козацьких дітей</p>
+                <p>Виступив з проєктом спадкового гетьманства в Україні</p>
+              </div>
+            </div>
+          </article>
+
+          {/* Глухівська петиція */}
+          <article className='bg-gradient-to-r from-slate-800/50 to-red-900/30 rounded-2xl p-6 sm:p-8 border border-red-500/30 backdrop-blur-sm'>
+            <h2 className='text-3xl sm:text-4xl font-bold text-red-300 mb-6 flex items-center'>
+              <span className='w-4 h-4 bg-red-400 rounded-full mr-4'></span>
+              <span className='bg-red-500/20 text-red-200 px-4 py-2 rounded-xl'>
+                Глухівська петиція
+              </span>
+            </h2>
+            <div className='space-y-6 text-xl sm:text-2xl'>
+              <p className='font-semibold text-red-200'>
+                1754 р. Укази, що обмежували гетьманську владу:
+              </p>
+              <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                <div className='space-y-4'>
+                  <p className='flex items-start space-x-3'>
+                    <span className='text-red-400 mt-2'>•</span>
+                    <span>Розумовському заборонили призначати полковників</span>
+                  </p>
+                  <p className='flex items-start space-x-3'>
+                    <span className='text-red-400 mt-2'>•</span>
+                    <span>
+                      Відхилено клопотання про відновлення самостійної
+                      зовнішньої політики Лівобережної Гетьманщини
+                    </span>
+                  </p>
+                </div>
+                <div className='space-y-4'>
+                  <p className='flex items-start space-x-3'>
+                    <span className='text-red-400 mt-2'>•</span>
+                    <span>
+                      Контролю підлягали фінансові справи. Рефортування
+                      судочинства
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          {/* Важлива дата */}
+          <article className='bg-gradient-to-r from-slate-800/50 to-orange-900/30 rounded-2xl p-6 sm:p-8 border border-orange-500/30 backdrop-blur-sm text-center'>
             <div className='space-y-4'>
-              <div className='flex items-start space-x-4 p-4 bg-red-900/20 rounded-lg'>
-                <div className='flex-shrink-0 w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center'>
-                  <span className='text-red-300 font-bold'>1754</span>
-                </div>
-                <div>
-                  <h3 className='text-red-200 font-semibold text-lg'>
-                    Глухівська петиція
-                  </h3>
-                  <p className='text-white/80'>
-                    Обмеження гетьманської влади царськими указами
-                  </p>
-                </div>
-              </div>
-              <div className='flex items-start space-x-4 p-4 bg-red-900/20 rounded-lg'>
-                <div className='flex-shrink-0 w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center'>
-                  <span className='text-red-300 font-bold'>1764</span>
-                </div>
-                <div>
-                  <h3 className='text-red-200 font-semibold text-lg'>
-                    Ліквідація гетьманства
-                  </h3>
-                  <p className='text-white/80'>
-                    Указ Катерини II про скасування гетьманської влади
-                  </p>
-                </div>
-              </div>
+              <span className='bg-orange-500/20 text-orange-200 text-2xl sm:text-3xl font-bold px-6 py-3 rounded-xl inline-block'>
+                Важлива дата!
+              </span>
+              <p className='text-2xl sm:text-3xl font-bold text-orange-200'>
+                1764 рік - указ імператриці Катерини II про ліквідацію
+                гетьманської влади в Україні
+              </p>
             </div>
           </article>
 
           {/* Цитати */}
-          <aside className='bg-gradient-to-br from-amber-900/20 to-orange-900/20 rounded-2xl p-8 border border-amber-500/30 backdrop-blur-sm'>
-            <h2 className='text-3xl font-bold text-amber-300 mb-6 text-center'>
-              💬 Історичні цитати
+          <article className='bg-gradient-to-br from-amber-900/20 to-orange-900/20 rounded-2xl p-6 sm:p-8 border border-amber-500/30 backdrop-blur-sm'>
+            <h2 className='text-3xl sm:text-4xl font-bold text-amber-300 mb-6 text-center'>
+              Цитати які треба знати
             </h2>
-            <div className='space-y-6'>
-              <blockquote className='relative'>
-                <div className='absolute -left-2 top-0 text-amber-400 text-2xl'>
+            <div className='space-y-6 text-xl sm:text-2xl'>
+              <blockquote className='relative bg-amber-900/20 rounded-2xl p-6 border-l-4 border-amber-400'>
+                <div className='absolute -left-2 top-0 text-amber-400 text-3xl'>
                   "
                 </div>
-                <p className='text-lg italic text-amber-100 pl-6 leading-relaxed'>
-                  <mark className='bg-amber-500/30 text-amber-200 px-1 rounded'>
+                <p className='italic text-amber-100 pl-6 leading-relaxed'>
+                  <span className='bg-amber-500/30 text-amber-200 px-2 py-1 rounded'>
                     Після всемилостивішого від нас звільнення графа
                     Розумовського з чину гетьманського наказую нашому Сенатові
                     для належного управління в Малій Росії створити там
-                    Малоросійську колегію...
-                  </mark>
+                    Малоросійську колегію, в якій бути головним нашому генералу
+                    графу Рум'янцеву...»
+                  </span>
                 </p>
-                <footer className='text-right mt-2 text-amber-200/80'>
-                  — Указ Катерини II
-                </footer>
+              </blockquote>
+              <blockquote className='relative bg-amber-900/20 rounded-2xl p-6 border-l-4 border-amber-400'>
+                <div className='absolute -left-2 top-0 text-amber-400 text-3xl'>
+                  "
+                </div>
+                <p className='italic text-amber-100 pl-6 leading-relaxed'>
+                  <span className='bg-green-500/30 text-green-200 px-2 py-1 rounded'>
+                    «треба найлегшим способом привести до того, щоб вони...
+                    перестали дивитися, як вовки на ліс. Коли в Малоросії не
+                    буде гетьмана, то треба намагатися щоб час і назва гетьманів
+                    зникли...
+                  </span>
+                </p>
               </blockquote>
             </div>
-          </aside>
+          </article>
         </section>
       </main>
 
       {/* Next Topic Footer */}
       <footer className='relative z-10 border-t border-cyan-500/20 mt-20 pt-12 pb-8'>
         <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
-          <div className='inline-flex items-center space-x-4 bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-cyan-500/30'>
-            <svg
-              className='w-5 h-5 text-cyan-400'
-              fill='currentColor'
-              viewBox='0 0 20 20'
-            >
-              <path
-                fillRule='evenodd'
-                d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z'
-                clipRule='evenodd'
-              />
-            </svg>
-            <span className='text-cyan-200 font-semibold'>
-              Наступна тема: Ліквідація Гетьманщини
+          <div className='inline-flex items-center space-x-4 bg-slate-800/50 backdrop-blur-sm px-6 py-4 rounded-full border border-cyan-500/30'>
+            <span className='text-cyan-200 font-semibold text-lg'>
+              Наступна тема: Друга Малоросійська колегія
             </span>
-            <svg
-              className='w-5 h-5 text-cyan-400'
-              fill='currentColor'
-              viewBox='0 0 20 20'
-            >
-              <path
-                fillRule='evenodd'
-                d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z'
-                clipRule='evenodd'
-              />
-            </svg>
           </div>
         </div>
       </footer>
